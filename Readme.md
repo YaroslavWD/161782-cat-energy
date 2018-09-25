@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ярослав Петухов](https://up.htmlacademy.ru/adaptive/15/user/161782).
-* Наставник: [Александр Кошара].(https://htmlacademy.ru/profile/rednaxxxela).
+* Наставник: [Александр Кошара](https://htmlacademy.ru/profile/rednaxxxela).
 
 ---
 
