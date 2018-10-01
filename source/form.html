@@ -18,6 +18,74 @@
             </ul>
         </nav>
     </header>
+    <main>
+      <section class="form">
+        <h1 class="form__title">Подбор программы</h1>
+        <p class="form__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <form method="post" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend class="visually-hidden">Основные данные</legend>
+            <p>
+              <label for="name-field">Имя:&#42;</label>
+              <input id="name-field" name="name" type="text" placeholder="Барсик">
+            </p>
+            <p>
+              <label for="weight-field">Вес:&#42;</label>
+              <input id="weight-field" name="weight" type="number" placeholder="7" min="0">
+            </p>
+            <p>
+              <label for="age-field">Возраст(Лет):</label>
+              <input id="age-field" name="age" type="number" placeholder="7" min="0">
+            </p>
+          </fieldset>
+          <fieldset>
+            <ul>
+              <li><input type="radio" name="target" id="slim-target" checked><label for="slim-target">Похудение</label></li>
+              <li><input type="radio" name="target" id="pro-target"><label for="pro-target">Набор массы</label></li>
+              <li><input type="radio" name="target" id="quest-target"><label for="quest-target">Не знаю (нужен ваш совет)</label></li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Контактные данные (владельца кота)</legend>
+            <p>
+              <label for="email-field">e-mail:&#42;</label>
+              <input type="email" name="email" id="email-field" placeholder="kuklachev@gmail.com">
+            </p>
+            <p>
+              <label for="tel-field">Телефон:&#42;</label>
+              <input type="tel" name="tel" id="tel-field" placeholder="8 (960) 900-60-90">
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend>Комментарий</legend>
+            <textarea name="comment-field" cols="35" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
+          <fieldset>
+            <legend></legend>
+            <ul>
+              <li>
+                <input type="checkbox" id="sweetener" name="sweetener">
+                <label for="sweetener">Сахарозаменитель</label>
+              </li>
+              <li>
+                <input type="checkbox" id="water" name="water">
+                <label for="water">Питьевая вода</label>
+              </li>
+              <li>
+                <input type="checkbox" id="milk" name="milk">
+                <label for="milk">Молоко</label>
+              </li>
+              <li>
+                  <input type="checkbox" id="vitamins" name="vitamins">
+                  <label for="vitamins">Витамины</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button" type="submit">Отправить заявку</button>
+          <span>:&#42;&mdash; Обязательные поля</span>
+        </form>
+      </section>
+    </main>
     <footer>
       <section class="location">
         <h2 class="visually-hidden">Как нас найти</h2>
@@ -29,21 +97,23 @@
         </div>
       </section>
       <div class="footer-logo">
-        <img src="/source/img/footer-logo.svg" alt="cat energy">
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+        <img src="/source/img/footer-logo.svg" alt="cat energy" width="128" height="24">
       </div>
-      <div class="social">
+      <section class="social">
         <ul>
           <li><a class="social__button social__button-vk" href="#"></a><span class="visually-hidden">Мы Вконтатке</span></li>
           <li><a class="social__button social__button-ig" href="#"></a><span class="visually-hidden">Наш Инстаграм</span></li>
           <li><a class="social__button social__button-fb" href="#"></a><span class="visually-hidden">Наш Фейсбук</span></li>
         </ul>
-      </div>
-      <div class="copyright">
+      </section>
+      <section class="copyright">
+        <h2 class="visually-hidden">Копирайт</h2>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <img src="/source/img/copyright-logo.svg" alt="HTML Academy" width="27" height="34">
         </a>
-      </div>
+      </section>
     </footer>
 </body>
 </html>
