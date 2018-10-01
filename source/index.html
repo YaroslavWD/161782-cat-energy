@@ -6,10 +6,10 @@
   </head>
   <body>
     <header>
-      <div class="main-logo">
+      <div class="logo">
         <img src="source/img/main-logo.svg" alt="cat-energy" width="191" height="39">
       </div>
-      <a class="menu-link" href="#"></a>
+      <button class="menu-button"></button>
       <nav class="main-menu">
         <ul class="main-menu__list">
           <li class="main-menu__item"><a>Главная</a></li>
@@ -19,25 +19,26 @@
       </nav>
     </header>
     <main>
-      <section class="promo-block">
-        <div>
-          <h1 class="promo-block__title">Функциональное питание для котов</h1>
-          <b>Занялся собой? Займись котом!</b>
-        </div>
-        <div class="promo-block__image">
+      <section class="promo">
+        <h1 class="promo__title">Функциональное питание для котов</h1>
+        <b>Занялся собой? Займись котом!</b>
+        <div class="promo__image">
           <img src="sourse/img/promo-image.jpg" alt="Cat-Energy Курица" width="280" height="270">
         </div>
-        <a href="form.html" class="button">Подобрать программу</a>
+        <a class="button" href="form.html" >Подобрать программу</a>
       </section>
-      <section class="category">
-        <h2 class="category__title">Похудение</h2>
-        <p class="category__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-        <a class="category_catalog-link" href="slim.catalog.html">Каталог slim</a>
-      </section>
-      <section class="category">
-          <h2 class="category__title">Набор массы</h2>
+      <section class="programs">
+      <h2 class="visually-hidden">Наши программы</h2>
+        <article class="category">
+          <h2 class="category__title">Похудение</h2>
           <p class="category__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="category_catalog-link" href="pro.catalog.html">Каталог pro</a>
+          <a class="category_catalog-link" href="slim.catalog.html">Каталог slim</a>
+        </article>
+        <article class="category">
+            <h2 class="category__title">Набор массы</h2>
+            <p class="category__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <a class="category_catalog-link" href="pro.catalog.html">Каталог pro</a>
+        </article>
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Наши преимущества</h2>
@@ -76,22 +77,22 @@
     <footer>
       <section class="location">
         <h2 class="visually-hidden">Как нас найти</h2>
-        <div class="location__contacts">
+        <div class="contacts">
           <p>приглашаем к сотрудничеству дилеров!</p>
           <p>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
-        <div class="location__map">
+        <div class="map">
         </div>
       </section>
       <div class="footer-logo">
-        <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <img src="/source/img/footer-logo.svg" alt="cat energy" width="128" height="24">
       </div>
       <section class="social">
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <ul>
-          <li><a class="social__button social__button-vk" href="#"></a><span class="visually-hidden">Мы Вконтатке</span></li>
-          <li><a class="social__button social__button-ig" href="#"></a><span class="visually-hidden">Наш Инстаграм</span></li>
-          <li><a class="social__button social__button-fb" href="#"></a><span class="visually-hidden">Наш Фейсбук</span></li>
+          <li><a class="social__link social__link-vk" href="#"><span class="visually-hidden">Мы Вконтатке</span></a></li>
+          <li><a class="social__link social__link-ig" href="#"><span class="visually-hidden">Наш Инстаграм</span></a></li>
+          <li><a class="social__link social__link-fb" href="#"><span class="visually-hidden">Наш Фейсбук</span></a></li>
         </ul>
       </section>
       <section class="copyright">
