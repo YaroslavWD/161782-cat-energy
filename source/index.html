@@ -5,8 +5,103 @@
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
-
+    <header>
+      <div class="logo">
+        <img src="source/img/main-logo.svg" alt="cat-energy" width="191" height="39">
+      </div>
+      <button class="menu-button"></button>
+      <nav class="main-menu">
+        <ul class="main-menu__list">
+          <li class="main-menu__item"><a>Главная</a></li>
+          <li class="main-menu__item"><a href="catalog.html">Каталог продукции</a></li>
+          <li class="main-menu__item"><a href="form.html">Подбор программы</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="promo">
+        <h1 class="promo__title">Функциональное питание для котов</h1>
+        <b>Занялся собой? Займись котом!</b>
+        <div class="promo__image">
+          <img src="sourse/img/promo-image.jpg" alt="Cat-Energy Курица" width="280" height="270">
+        </div>
+        <a class="button" href="form.html" >Подобрать программу</a>
+      </section>
+      <section class="programs">
+      <h2 class="visually-hidden">Наши программы</h2>
+        <article class="category">
+          <h2 class="category__title">Похудение</h2>
+          <p class="category__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+          <a class="category_catalog-link" href="slim.catalog.html">Каталог slim</a>
+        </article>
+        <article class="category">
+            <h2 class="category__title">Набор массы</h2>
+            <p class="category__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <a class="category_catalog-link" href="pro.catalog.html">Каталог pro</a>
+        </article>
+      </section>
+      <section class="advantages">
+        <h2 class="visually-hidden">Наши преимущества</h2>
+        <p class="advantages__title">Как это работает</p>
+        <ul>
+          <li class="advantages__item">Функциональное питание содержит только полезные питательные вещества.</li>
+          <li class="advantages__item">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
+          <li class="advantages__item">Замените один-два приема обычной еды на наше функциональное питание.</li>
+          <li class="advantages__item">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
+        </ul>
+      </section>
+      <section class="example">
+        <h2 class="example__title">Живой пример</h2>
+        <p class="example__text">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+        </p>
+        <div class="example__options">
+          <p>5 кг</p>
+          <p>снижение веса</p>
+        </div>
+        <div class="example__options">
+          <p>60 дней</p>
+          <p>затрачено времени</p>
+        </div>
+        <p class="example__food-cost">Затраты на питание: 15 000 руб.</p>
+        <div class="example__before-after">
+          <div class="example__image"></div>
+          <div class="example__toggles">
+            <button class="example__toggle example__toggle-after">Было</button>
+            <div class="example__toggles-bar"></div>
+            <button class="example__toggle example__toggle-before">Стало</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="location">
+        <h2 class="visually-hidden">Как нас найти</h2>
+        <div class="contacts">
+          <p>приглашаем к сотрудничеству дилеров!</p>
+          <p>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+        <div class="map">
+        </div>
+      </section>
+      <div class="footer-logo">
+        <img src="/source/img/footer-logo.svg" alt="cat energy" width="128" height="24">
+      </div>
+      <section class="social">
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+        <ul>
+          <li><a class="social__link social__link--vk" href="#"><span class="visually-hidden">Мы Вконтатке</span></a></li>
+          <li><a class="social__link social__link--ig" href="#"><span class="visually-hidden">Наш Инстаграм</span></a></li>
+          <li><a class="social__link social__link--fb" href="#"><span class="visually-hidden">Наш Фейсбук</span></a></li>
+        </ul>
+      </section>
+      <section class="copyright">
+        <h2 class="visually-hidden">Копирайт</h2>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="/source/img/copyright-logo.svg" alt="HTML Academy" width="27" height="34">
+        </a>
+      </section>
+    </footer>
   </body>
 </html>
