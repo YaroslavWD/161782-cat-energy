@@ -1,0 +1,25 @@
+@import "font.scss";
+
+.button {
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  @include main-font;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  min-width: 280px;
+  min-height: 40px;
+  padding-top: 14px;
+  padding-bottom: 11px;
+  background-color: $brand-color;
+
+  &--alt {
+    background-color: $brand-color-alt;
+    color: $font-color;
+  }
+}
+
+

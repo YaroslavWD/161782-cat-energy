@@ -1,0 +1,95 @@
+@import "font.scss";
+
+.category {
+  @include main-font;
+  position: relative;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f2f2f2;
+  color: #111111;
+
+  &__title {
+    padding: 0;
+    margin: 0;
+    padding-left: 70px;
+    font-size: 24px;
+    line-height: 37px;
+    font-weight: 400;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    text-align: left;
+
+    &--slim::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/icon-cat-slim.svg");
+      background-repeat: no-repeat;
+      background-position-x: 5px;
+      left: 20px;
+      width: 50px;
+      height: 51px;
+      z-index: 2;
+    }
+
+    &--slim::after {
+      content: "";
+      position: absolute;
+      background-color: $brand-color;
+      border-radius: 50%;
+      left: 20px;
+      width: 50px;
+      height: 51px;
+      z-index: 1;
+    }
+
+    &--pro::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/icon-cat-pro.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: 30px;
+      left: 10px;
+      width: 67px;
+      height: 50px;
+      z-index: 2;
+    }
+
+    &--pro::after {
+      content: "";
+      position: absolute;
+      background-color: $brand-color;
+      border-radius: 50%;
+      left: 20px;
+      width: 50px;
+      height: 51px;
+      z-index: 1;
+    }
+
+  }
+
+  &__text {
+    @include main-font;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 20px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #444444;
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  &__link {
+    display: block;
+    padding-top: 14px;
+    @include main-font;
+    font-size: 16px;
+    line-height: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #111111;
+  }
+
+}

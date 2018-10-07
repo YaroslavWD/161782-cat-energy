@@ -1,0 +1,81 @@
+@import "font.scss";
+
+.example {
+  @include main-font;
+  background-color: $brand-color-alt;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  &__title {
+    padding: 0;
+    margin: 0;
+    font-size: 36px;
+    line-height: 60px;
+    font-weight: 400;
+  }
+
+  &__text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: #444444;
+    font-weight: normal;
+  }
+
+  &__options {
+    background-color: $brand-color-alt;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__options::before {
+    content: "";
+    position: absolute;
+    width: 124px;
+    height: 56px;
+    border: 1px solid #cdcdcd;
+    z-index: 1;
+  }
+
+  &__result-value {
+    @include main-font;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: normal;
+    text-transform: uppercase;
+    z-index: 2;
+  }
+
+  &__result {
+    font-family: Arial, Helvetica, sans-serif;
+    color: $font-color;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: normal;
+    text-transform: lowercase;
+    z-index: 2;
+  }
+
+  &__food-cost {
+    @include main-font;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: $font-color-title;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__toggle {
+    background-color: $brand-color-alt;
+    border: none;
+    text-transform: uppercase;
+  }
+
+}

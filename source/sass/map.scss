@@ -1,0 +1,20 @@
+.map {
+  width: 320px;
+  height: 360px;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 53px;
+    background-image: url("../img/map-pin.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 180px;
+    left: 130px;
+  }
+}

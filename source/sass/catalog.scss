@@ -1,0 +1,12 @@
+@import "font.scss";
+
+.catalog {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  &__item {
+    padding-bottom: 24px;
+    border-bottom: 1px solid #ededed;
+  }
+
+}

@@ -1,0 +1,22 @@
+// Подключаем шрифты локально
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+
+  font-family: "Oswald";
+  src: url(../fonts/oswaldregular.woff2);
+}
+
+@font-face {
+  font-weight: 500;
+  font-style: normal;
+
+  font-family: "Oswald";
+  src: url(../fonts/oswaldmedium.woff2);
+}
+
+// Главные параметры текста
+@mixin main-font {
+  font-family: "Oswald", Arial, sans-serif;
+}
+

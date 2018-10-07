@@ -1,0 +1,40 @@
+@import "normalize.scss";
+@import "font.scss";
+@import "brand-color.scss";
+@import "header-site.scss";
+@import "menu-buttons.scss";
+@import "logo.scss";
+@import "main-menu.scss";
+@import "promo.scss";
+@import "button.scss";
+@import "wrap.scss";
+@import "programs.scss";
+@import "category.scss";
+@import "advantages.scss";
+@import "example.scss";
+@import "contacts.scss";
+@import "map.scss";
+@import "footer-bottom.scss";
+@import "footer-logo.scss";
+@import "social.scss";
+@import "copyright.scss";
+@import "catalog.scss";
+@import "page-title.scss";
+@import "product.scss";
+@import "product-add.scss";
+
+
+body {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+}
