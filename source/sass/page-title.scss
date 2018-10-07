@@ -1,7 +1,7 @@
 @import "font.scss";
 
 .page-title {
-  @include main-font;
+  font-family: $main-font;
   padding: 0;
   margin: 0;
   font-size: 36px;

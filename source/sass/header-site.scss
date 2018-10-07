@@ -1,7 +1,7 @@
 @import "font.scss";
 
 .header-site {
-  @include main-font;
+  font-family: $main-font;
   color: #ffffff;
   position: relative;
 }

@@ -1,7 +1,7 @@
 @import "font.scss";
 
 .promo {
-  @include main-font;
+  font-family: $main-font;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
