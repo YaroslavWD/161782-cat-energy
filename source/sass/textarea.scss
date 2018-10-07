@@ -1,0 +1,7 @@
+.textarea {
+  &::placeholder {
+    text-transform: uppercase;
+    font-family: $main-font;
+    color: $font-color;
+  }
+}

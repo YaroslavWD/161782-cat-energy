@@ -1,10 +1,8 @@
-.copyright {
-  &__link {
-    font-family: $main-font-alt;
-    color: $font-color;
-    font-size: 16px;
-    line-height: 16px;
-    font-weight: 400;
-    text-decoration: none;
-  }
+.copyright__link {
+  font-family: $secondary-font;
+  color: $font-color;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-decoration: none;
 }

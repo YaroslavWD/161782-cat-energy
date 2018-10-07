@@ -1,5 +1,3 @@
-@import "font.scss";
-
 .promo {
   font-family: $main-font;
   background-image: url("../img/index-background-mobile@1x.jpg");
@@ -10,25 +8,25 @@
   padding-left: 20px;
   padding-right: 20px;
   margin-bottom: 22px;
+}
 
-  &__title {
-    padding: 0;
-    margin: 0;
-    font-size: 36px;
-    line-height: 36px;
-    font-weight: 400;
-    text-align: center;
-    color: #ffffff;
-    padding-top: 29px;
-    padding-bottom: 19px;
-  }
+.promo__title {
+  padding: 0;
+  margin: 0;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 29px;
+  padding-bottom: 19px;
+}
 
-  &__text {
-    display: block;
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 14px;
-    font-weight: 400;
-    text-align: center;
-  }
+.promo__text {
+  display: block;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  text-align: center;
 }

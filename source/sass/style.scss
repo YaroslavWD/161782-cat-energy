@@ -22,19 +22,12 @@
 @import "page-title.scss";
 @import "product.scss";
 @import "product-add.scss";
-
-
-body {
-  width: 320px;
-  margin: 0 auto;
-}
-
-.visually-hidden {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  padding: 0;
-}
+@import "subcatalog.scss";
+@import "related-item.scss";
+@import "form.scss";
+@import "global.scss";
+@import "programm-form.scss";
+@import "input.scss";
+@import "radio.scss";
+@import "textarea.scss";
+@import "checkbox.scss";

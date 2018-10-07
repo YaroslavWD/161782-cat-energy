@@ -1,19 +1,19 @@
 .product-add {
   text-align: center;
+}
 
-  &__title {
-    font-family: $main-font;
-    color: $font-color-title;
-    text-transform: uppercase;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 400;
-  }
+.product-add__title {
+  font-family: $main-font;
+  color: $font-color-title;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
 
-  &__options {
-    font-family: $main-font-alt;
-    color: $font-color;
-    font-size: 12px;
-    line-height: 16px;
-  }
+.product-add__options {
+  font-family: $secondary-font;
+  color: $font-color;
+  font-size: 12px;
+  line-height: 16px;
 }

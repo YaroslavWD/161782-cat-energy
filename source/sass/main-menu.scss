@@ -1,33 +1,31 @@
-@import "font.scss";
-
 .main-menu {
   background-color: #ffffff;
+  color: $font-color-title;
+}
+
+.main-menu__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.main-menu__link {
+  box-sizing: border-box;
+  display: block;
+  font-family: $main-font;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
   color: #111111;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #e6e6e6;
 
-  &__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-align: center;
-  }
-
-  &__link {
-    box-sizing: border-box;
-    display: block;
-    font-family: $main-font;
-    font-size: 20px;
-    line-height: 20px;
-    font-weight: 500;
-    color: #111111;
-    text-decoration: none;
-    text-align: center;
-    text-transform: uppercase;
-    padding-top: 22px;
-    padding-bottom: 22px;
-    border-bottom: 1px solid #e6e6e6;
-
-    &--last {
-      padding-top: 24px;
-    }
+  &--last {
+    padding-top: 24px;
   }
 }

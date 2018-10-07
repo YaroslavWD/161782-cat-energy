@@ -1,13 +1,11 @@
-.social {
-  &__list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }
+.social__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
 
-  &__link {
-    display: block;
-    width: 30px;
-    height: 30px;
-  }
+.social__link {
+  display: block;
+  width: 30px;
+  height: 30px;
 }

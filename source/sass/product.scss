@@ -1,33 +1,29 @@
-@import "font.scss";
+.product__title {
+  font-family: $main-font;
+  color: $font-color-title;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+}
 
-.product {
-  &__title {
-    font-family: $main-font;
-    color: $font-color-title;
-    text-transform: uppercase;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: normal;
-  }
+.product__options {
+  font-size: 12px;
+  line-height: 16px;
+}
 
-  &__options {
-    font-size: 12px;
-    line-height: 16px;
-  }
+.product__label {
+  font-family: $secondary-font;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: normal;
+  color: $font-color;
+}
 
-  &__label {
-    font-family: "Arial", "Helvetica", sans-serif;
-    font-size: 12px;
-    line-height: 16px;
-    font-weight: normal;
-    color: $font-color;
-  }
-
-  &__value {
-    font-family: $main-font-alt;
-    font-size: 12px;
-    line-height: 16px;
-    font-weight: normal;
-    color: $font-color;
-  }
+.product__value {
+  font-family: $secondary-font;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: normal;
+  color: $font-color;
 }
