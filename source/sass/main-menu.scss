@@ -14,7 +14,7 @@
   &__link {
     box-sizing: border-box;
     display: block;
-    @include main-font;
+    font-family: $main-font;
     font-size: 20px;
     line-height: 20px;
     font-weight: 500;
@@ -29,7 +29,5 @@
     &--last {
       padding-top: 24px;
     }
-
   }
-
 }

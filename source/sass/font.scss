@@ -4,7 +4,7 @@
   font-style: normal;
 
   font-family: "Oswald";
-  src: url(../fonts/oswaldregular.woff2);
+  src: url("../fonts/oswaldregular.woff2");
 }
 
 @font-face {
@@ -12,11 +12,5 @@
   font-style: normal;
 
   font-family: "Oswald";
-  src: url(../fonts/oswaldmedium.woff2);
+  src: url("../fonts/oswaldmedium.woff2");
 }
-
-// Главные параметры текста
-@mixin main-font {
-  font-family: "Oswald", Arial, sans-serif;
-}
-

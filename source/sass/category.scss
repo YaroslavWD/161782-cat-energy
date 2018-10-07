@@ -1,7 +1,7 @@
 @import "font.scss";
 
 .category {
-  @include main-font;
+  font-family: $main-font;
   position: relative;
   padding: 20px;
   margin-bottom: 20px;
@@ -65,12 +65,10 @@
       height: 51px;
       z-index: 1;
     }
-
   }
 
   &__text {
-    @include main-font;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Arial", "Helvetica", sans-serif;
     padding: 0;
     margin: 0;
     padding-bottom: 20px;
@@ -84,12 +82,11 @@
   &__link {
     display: block;
     padding-top: 14px;
-    @include main-font;
+    font-family: $main-font;
     font-size: 16px;
     line-height: 16px;
     text-decoration: none;
     text-transform: uppercase;
     color: #111111;
   }
-
 }
