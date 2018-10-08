@@ -1,0 +1,24 @@
+.input {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.input__text {
+  font-family: $main-font;
+  color: #222222;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.input__control {
+  border: 1px solid #cdcdcd;
+
+  &::placeholder {
+    text-transform: uppercase;
+    font-family: $main-font;
+    color: $font-color;
+  }
+}

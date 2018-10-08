@@ -1,0 +1,90 @@
+.category {
+  font-family: $main-font;
+  position: relative;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: $brand-color-alt;
+  color: $font-color-title;
+}
+
+.category__title {
+  padding: 0;
+  margin: 0;
+  padding-left: 70px;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  text-align: left;
+
+  &--slim::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+    left: 20px;
+    width: 50px;
+    height: 51px;
+    z-index: 2;
+  }
+
+  &--slim::after {
+    content: "";
+    position: absolute;
+    background-color: $brand-color;
+    border-radius: 50%;
+    left: 20px;
+    width: 50px;
+    height: 51px;
+    z-index: 1;
+  }
+
+  &--pro::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-cat-pro.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 30px;
+    left: 10px;
+    width: 67px;
+    height: 50px;
+    z-index: 2;
+  }
+
+  &--pro::after {
+    content: "";
+    position: absolute;
+    background-color: $brand-color;
+    border-radius: 50%;
+    left: 20px;
+    width: 50px;
+    height: 51px;
+    z-index: 1;
+  }
+}
+
+.category__text {
+  font-family: $secondary-font;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #444444;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.category__link {
+  display: block;
+  padding-top: 14px;
+  font-family: $main-font;
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $font-color-title;
+}
