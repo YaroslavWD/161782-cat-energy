@@ -30,3 +30,38 @@
   font-weight: 400;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+
+  .promo {
+    width: 708px;
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 90px;
+  }
+
+  .promo__title {
+    width: 487px;
+    font-size: 60px;
+    line-height: 60px;
+    color: $font-color-title;
+    text-align: left;
+    margin-bottom: 35px;
+    order: 1;
+  }
+
+  .promo__text {
+    width: 487px;
+    font-size: 20px;
+    line-height: 20px;
+    color: $font-color-title;
+    text-align: left;
+    margin-bottom: 45px;
+    order: 1;
+  }
+
+  .promo__image {
+    order: 3
+  }
+}

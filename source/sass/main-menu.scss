@@ -29,3 +29,29 @@
     padding-top: 24px;
   }
 }
+
+@media (min-width: $tablet-width) {
+
+  .main-menu {
+    margin-left: auto;
+  }
+
+  .main-menu__list {
+    min-width: 516px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around
+  }
+
+  .main-menu__link {
+    font-size: 18px;
+    line-height: 25px;
+    color: #222222;
+    border: none;
+    padding: 20px 0 15px;
+
+    &--active {
+      border-bottom: 2px solid $brand-color;
+    }
+  }
+}

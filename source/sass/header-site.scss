@@ -3,3 +3,21 @@
   color: #ffffff;
   position: relative;
 }
+
+@media (min-width: $tablet-width) {
+
+  .header-site {
+    width: 768px;
+    display: flex;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .header-site {
+    width: 1300px;
+    display: flex;
+  }
+}

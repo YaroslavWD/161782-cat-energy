@@ -24,3 +24,10 @@
     line-height: 20px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .button {
+    width: 245px;
+    order: 2;
+  }
+}
