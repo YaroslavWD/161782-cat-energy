@@ -3,3 +3,10 @@
   height: 24px;
   margin: 0 auto;
 }
+
+
+@media (min-width: $tablet-width) {
+  .footer-logo {
+    margin: 0;
+  }
+}

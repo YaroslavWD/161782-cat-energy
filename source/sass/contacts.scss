@@ -5,6 +5,10 @@
   background-color: $brand-color-alt;
 }
 
+.contacts--index {
+  background-color: #ffffff;
+}
+
 .contacts__offer {
   font-family: $main-font;
   color: $font-color-title;
@@ -20,4 +24,32 @@
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    padding-left: 70px;
+    padding-right: 70px;
+    background-color: #ffffff;
+    justify-content: space-between;
+  }
+
+  .contacts__offer {
+    font-size: 20px;
+    line-height: 25px;
+    width: 155px;
+    text-align: left;
+  }
+
+  .contacts__address {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    width: 155px;
+  }
+
+  .contacts__town {
+    display: block;
+    margin-top: 20px;
+  }
 }

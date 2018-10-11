@@ -3,3 +3,12 @@
   padding-right: 20px;
   background-color: $brand-color-alt;
 }
+
+@media (min-width: $tablet-width) {
+  .footer-bottom {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+}
