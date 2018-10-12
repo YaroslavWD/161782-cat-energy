@@ -15,15 +15,20 @@
   .form {
     padding-left: 30px;
     padding-right: 30px;
+    margin-bottom: 70px;
   }
 
   .form__description {
+    width: 325px;
     font-size: 20px;
     line-height: 30px;
+    margin-left: 40px;
   }
 
   .programm-form {
     padding-left: 40px;
     padding-right: 37px;
+    display: flex;
+    flex-direction: column;
   }
 }

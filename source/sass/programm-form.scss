@@ -2,6 +2,10 @@
   font-family: $main-font;
 }
 
+.programm-form__item {
+  position: relative;
+}
+
 .programm-form__fieldset {
   border: none;
   padding: 0;
@@ -28,4 +32,43 @@
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
+}
+
+@media (min-width: $tablet-width) {
+  .programm-form__fieldset {
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .programm-form__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 70px;
+  }
+
+  .programm-form__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .programm-form__list--radio {
+    padding: 25px 28px;
+    border: 1px solid #cdcdcd;
+  }
+
+  .programm-form__list--checkbox {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .programm-form__send {
+    display: flex;
+    align-items: center
+  }
+
+  .programm-form__requared-text {
+    order: 2;
+  }
+
 }
