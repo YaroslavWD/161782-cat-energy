@@ -10,3 +10,20 @@
   line-height: 18px;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .form {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .form__description {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .programm-form {
+    padding-left: 40px;
+    padding-right: 37px;
+  }
+}

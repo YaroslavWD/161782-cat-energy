@@ -1,5 +1,6 @@
 .related-item__title {
   font-family: $main-font;
+  text-transform: uppercase;
   color: #222222;
   font-size: 16px;
   line-height: 16px;
@@ -22,4 +23,35 @@
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
+}
+
+@media (min-width: $tablet-width) {
+  .related-item {
+    border: 1px solid #cdcdcd;
+    padding: 28px 37px;
+    margin-bottom: -1px;
+  }
+
+  .related-item__wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .related-item__title {
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  .related-item__label {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .related-item__value {
+    font-size: 16px;
+    line-height: 20px;
+    padding-left: 50px;
+  }
 }

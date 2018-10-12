@@ -7,3 +7,12 @@
   font-weight: normal;
   border-bottom: 1px solid #ededed;
 }
+
+@media (min-width: $tablet-width) {
+  .page-title {
+    display: block;
+    font-size: 60px;
+    text-align: left;
+    border: none;
+  }
+}

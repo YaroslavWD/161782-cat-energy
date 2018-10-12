@@ -18,3 +18,42 @@
   line-height: 20px;
   text-align: center;
 }
+
+.subcatalog__present-icon {
+  fill: #ffffff;
+}
+
+.subcatalog__image {
+  width: 55px;
+  height: 60px;
+}
+
+@media (min-width: $tablet-width) {
+  .subcatalog__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .subcatalog__present {
+    width: 100%;
+    min-height: 200px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .subcatalog__image {
+    width: 55px;
+    height: 60px;
+  }
+
+  .subcatalog__present-text {
+    width: 160px;
+    position: relative;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+}

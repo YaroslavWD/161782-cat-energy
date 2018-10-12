@@ -17,3 +17,34 @@
   font-size: 12px;
   line-height: 16px;
 }
+
+@media (min-width: $tablet-width) {
+  .product-add {
+    width: 324px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    border: 1px solid #cdcdcd;
+    padding-left: 37px;
+    padding-right: 37px;
+  }
+
+  .product-add__title {
+    width: 135px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  .product-add__options {
+    font-size: 16px;
+    line-height: 16px;
+    width: 172px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 100px;
+  }
+}

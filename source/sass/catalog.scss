@@ -7,3 +7,22 @@
   padding-bottom: 24px;
   border-bottom: 1px solid #ededed;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 70px;
+  }
+
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .catalog__item {
+    width: 324px;
+    background-color: $brand-color-alt;
+  }
+}
