@@ -6,9 +6,12 @@
 .form__description {
   font-family: $main-font;
   color: $font-color-title;
+  padding: 0;
+  margin: 0;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  padding-bottom: 14px;
 }
 
 @media (min-width: $tablet-width) {

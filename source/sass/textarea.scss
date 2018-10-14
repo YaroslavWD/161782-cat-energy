@@ -1,4 +1,7 @@
 .textarea {
+  width: 100%;
+  border: 1px solid #cdcdcd;
+
   &::placeholder {
     text-transform: uppercase;
     font-family: $main-font;

@@ -24,18 +24,20 @@
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     align-items: center;
     border: 1px solid #cdcdcd;
-    padding-left: 37px;
+    padding-left: 38px;
     padding-right: 37px;
   }
 
   .product-add__title {
-    width: 135px;
+    margin: 0;
+    padding: 0;
+    padding-top: 120px;
+    padding-left: 57px;
+    padding-right: 56px;
     font-size: 20px;
     line-height: 20px;
-    padding: 0;
     margin-bottom: 30px;
   }
 

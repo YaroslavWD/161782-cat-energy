@@ -1,3 +1,7 @@
+.checkbox {
+  padding: 12px 16px 12px 46px;
+}
+
 .checkbox__text {
   font-family: $main-font;
   color: #222222;
@@ -5,13 +9,26 @@
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #cdcdcd;
+    top: 10px;
+    left: 0;
+  }
+}
+
+.checkbox__control {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
   .checkbox {
     width: 313px;
     position: relative;
-    margin-bottom: 32px;
   }
 
   .checkbox__text {
@@ -28,9 +45,5 @@
       top: -10px;
       left: 0;
     }
-  }
-
-  .checkbox__control {
-    display: none;
   }
 }

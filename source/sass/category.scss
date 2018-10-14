@@ -95,6 +95,7 @@
     display: flex;
     flex-direction: column;
     padding: 75px 28px 55px 55px;
+    padding-right: 290px;
   }
 
   .category__title {
@@ -132,7 +133,6 @@
   }
 
   .category__text {
-    width: 340px;
     font-size: 16px;
     line-height: 24px;
     color: $font-color;
@@ -140,7 +140,6 @@
   }
 
   .category__link {
-    width: 340px;
     font-size: 20px;
     line-height: 20px;
   }
