@@ -50,3 +50,9 @@
     margin-bottom: 100px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .product-add {
+    width: 250px;
+  }
+}

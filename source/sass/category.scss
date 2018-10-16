@@ -14,7 +14,7 @@
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
-  margin-bottom: 24px;
+  padding-bottom: 24px;
   text-transform: uppercase;
   text-align: left;
 
@@ -99,7 +99,6 @@
   }
 
   .category__title {
-    width: 340px;
     font-size: 36px;
     line-height: 37px;
     color: $font-color-title;
@@ -142,5 +141,25 @@
   .category__link {
     font-size: 20px;
     line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .category {
+    width: 570px;
+    align-items: flex-start;
+    padding: 40px 52px;
+  }
+
+  .category__title {
+    align-self: center;
+
+    &::after {
+      display: none;
+    }
+
+    &::before {
+      display: none;
+    }
   }
 }

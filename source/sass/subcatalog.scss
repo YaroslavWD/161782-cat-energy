@@ -8,6 +8,13 @@
   margin: 0;
 }
 
+.subcatalog__additional-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
 .subcatalog__present {
   background-image: url("../img/gift-photo-mobile@1x.jpg");
 }
@@ -32,6 +39,7 @@
   .subcatalog__title {
     font-size: 36px;
     line-height: 36px;
+    padding-bottom: 75px;
   }
 
   .subcatalog__present {
@@ -55,5 +63,21 @@
     text-align: left;
     margin: 0;
     padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .subcatalog__wrap {
+    display: flex;
+  }
+
+  .subcatalog__additional-list {
+    flex-grow: 1;
+    padding-right: 80px;
+  }
+
+  .subcatalog__present {
+    width: auto;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
   }
 }

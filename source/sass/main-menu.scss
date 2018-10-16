@@ -36,10 +36,13 @@
   }
 
   .main-menu__list {
-    min-width: 516px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+
+  .main-menu__item {
+    padding-left: 20px;
   }
 
   .main-menu__link {
@@ -52,5 +55,16 @@
     &--active {
       border-bottom: 2px solid $brand-color;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-menu {
+    background-color: transparent;
+  }
+
+  .main-menu__link--index {
+    color: #ffffff;
+    border-color: #ffffff;
   }
 }

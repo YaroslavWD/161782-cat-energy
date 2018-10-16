@@ -12,3 +12,9 @@
     padding-bottom: 55px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .footer-bottom {
+    justify-content: space-between;
+  }
+}

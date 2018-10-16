@@ -221,3 +221,19 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .example__desktop-wrap-1 {
+    display: flex;
+  }
+
+  .example__desktop-wrap-2 {
+    display: flex;
+    background-color: $brand-color-alt;
+    flex-direction: column;
+  }
+
+  .example__food-cost {
+    width: auto;
+  }
+}

@@ -12,6 +12,8 @@
 .contacts__offer {
   font-family: $main-font;
   color: $font-color-title;
+  padding: 0;
+  margin: 0;
   font-size: 16px;
   line-height: 20px;
   font-weight: normal;
@@ -21,6 +23,8 @@
 .contacts__address {
   font-family: $secondary-font;
   color: $font-color;
+  padding: 0;
+  margin: 0;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
@@ -50,5 +54,27 @@
   .contacts__town {
     display: block;
     margin-top: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    width: 570px;
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    z-index: 2;
+    padding: 66px 90px 62px 76px;
+  }
+
+  .contacts__offer {
+    display: block;
+    padding-right: 90px;
+    width: auto;
+  }
+
+  .contacts__address {
+    display: block;
+    width: auto;
   }
 }

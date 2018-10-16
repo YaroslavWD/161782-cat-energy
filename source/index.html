@@ -8,23 +8,21 @@
   </head>
   <body>
     <header class="header-site">
-      <div class="wrap">
-        <div class="logo">
-          <img src="img/logo-mobile.svg" alt="cat-energy" width="191" height="39">
-        </div>
-        <button class="menu-button"></button>
+      <div class="logo">
+        <img src="img/logo-mobile.svg" alt="cat-energy" width="191" height="39">
       </div>
-        <nav class="main-menu">
-          <ul class="main-menu__list">
-            <li class="main-menu__item"><a class="main-menu__link main-menu__link--active main-menu__link--first">Главная</a></li>
-            <li class="main-menu__item"><a class="main-menu__link" href="catalog.html">Каталог продукции</a></li>
-            <li class="main-menu__item"><a class="main-menu__link main-menu__link--last" href="form.html">Подбор программы</a></li>
-          </ul>
-        </nav>
+      <button class="menu-button"></button>
+      <nav class="main-menu">
+        <ul class="main-menu__list">
+          <li class="main-menu__item"><a class="main-menu__link main-menu__link--index main-menu__link--active">Главная</a></li>
+          <li class="main-menu__item"><a class="main-menu__link main-menu__link--index" href="catalog.html">Каталог продукции</a></li>
+          <li class="main-menu__item"><a class="main-menu__link main-menu__link--index" href="form.html">Подбор программы</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
       <section class="promo">
-        <div class="wrap">
+        <div class="wrap promo__wrap">
           <h1 class="promo__title">Функциональное питание для котов</h1>
           <b class="promo__text">Занялся собой? Займись котом!</b>
           <div class="promo__image">
@@ -61,39 +59,43 @@
       <section class="example">
         <div class="wrap">
           <h2 class="example__title">Живой пример</h2>
-          <p class="example__text">
-              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-          </p>
-          <div class="example__wrap">
-            <div class="example__options-wrap">
-              <div class="example__options">
-                <p class="example__result-value">5 кг</p>
-                <p class="example__result">снижение веса</p>
-              </div>
-              <div class="example__options">
-                <p class="example__result-value">60 дней</p>
-                <p class="example__result">затрачено времени</p>
+          <div class="example__desktop-wrap-1">
+            <div class="example__desktop-wrap-2">
+              <p class="example__text">
+                  Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+              </p>
+              <div class="example__wrap">
+                <div class="example__options-wrap">
+                  <div class="example__options">
+                    <p class="example__result-value">5 кг</p>
+                    <p class="example__result">снижение веса</p>
+                  </div>
+                  <div class="example__options">
+                    <p class="example__result-value">60 дней</p>
+                    <p class="example__result">затрачено времени</p>
+                  </div>
+                </div>
+                <p class="example__food-cost">Затраты на питание: 15 000 руб.</p>
               </div>
             </div>
-            <p class="example__food-cost">Затраты на питание: 15 000 руб.</p>
-          </div>
-          <div class="example__before-after">
-            <div class="example__toggles">
-              <div class="example__before">
-                <div class="example__image example__image--before"></div>
-                <button class="example__toggle example__toggle-after">Было</button>
-              </div>
-              <div class="example__toggles-bar"></div>
-              <div class="example__after">
-                <div class="example__image example__image--after"></div>
-                <button class="example__toggle example__toggle-before">Стало</button>
+            <div class="example__before-after">
+              <div class="example__toggles">
+                <div class="example__before">
+                  <div class="example__image example__image--before"></div>
+                  <button class="example__toggle example__toggle-after">Было</button>
+                </div>
+                <div class="example__toggles-bar"></div>
+                <div class="example__after">
+                  <div class="example__image example__image--after"></div>
+                  <button class="example__toggle example__toggle-before">Стало</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <section class="location">
         <h2 class="visually-hidden">Как нас найти</h2>
         <div class="contacts contacts--index">

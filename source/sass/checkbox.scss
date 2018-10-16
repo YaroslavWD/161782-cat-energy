@@ -3,6 +3,7 @@
 }
 
 .checkbox__text {
+  position: relative;
   font-family: $main-font;
   color: #222222;
   font-size: 16px;
@@ -45,5 +46,15 @@
       top: -10px;
       left: 0;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .checkbox {
+    width: 285px;
+  }
+
+  .checkbox__text {
+    padding-left: 80px;
   }
 }

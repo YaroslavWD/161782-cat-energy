@@ -39,3 +39,14 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .button--related-item {
+    width: 245px;
+  }
+
+  .button--form {
+    width: 570px;
+    margin-right: 80px;
+  }
+}

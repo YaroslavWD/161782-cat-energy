@@ -13,3 +13,10 @@
     padding-right: 30px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .wrap {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
