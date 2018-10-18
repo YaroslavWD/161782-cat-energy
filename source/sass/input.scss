@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   margin-bottom: 14px;
+  display: flex;
 }
 
 .input__text {
@@ -11,10 +12,12 @@
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
+  padding-right: 15px;
 }
 
 .input__control {
   border: 1px solid #cdcdcd;
+  flex-grow: 1;
 
   &::placeholder {
     text-transform: uppercase;
@@ -36,7 +39,6 @@
   }
 
   .input__control {
-    flex-grow: 1;
     padding: 17px 20px;
 
     &::placeholder {

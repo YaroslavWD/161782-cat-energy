@@ -10,6 +10,10 @@
   text-align: center;
 }
 
+.main-menu__list:nth-child(2) {
+  border-bottom: 1px solid red;
+}
+
 .main-menu__link {
   box-sizing: border-box;
   display: block;

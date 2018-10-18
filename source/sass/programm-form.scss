@@ -1,5 +1,6 @@
 .programm-form {
   font-family: $main-font;
+  padding-bottom: 35px;
 }
 
 .programm-form__item {
@@ -25,7 +26,6 @@
   line-height: 24px;
   font-weight: 400;
   color: $font-color-title;
-  padding-top: 30px;
   padding-bottom: 31px;
 }
 
@@ -39,7 +39,7 @@
 
 @media (min-width: $tablet-width) {
   .programm-form__fieldset {
-    margin-bottom: 70px;
+    padding-bottom: 70px;
     display: flex;
     flex-direction: column;
   }
@@ -47,7 +47,7 @@
   .programm-form__title {
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 70px;
+    padding-bottom: 70px;
   }
 
   .programm-form__list {

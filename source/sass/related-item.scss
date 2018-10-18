@@ -1,3 +1,9 @@
+.related-item {
+  padding-top: 15px;
+  padding-bottom: 17px;
+  border-top: 1px solid #cdcdcd;
+}
+
 .related-item__title {
   font-family: $main-font;
   text-transform: uppercase;
@@ -7,6 +13,14 @@
   font-weight: 400;
   padding: 0;
   margin: 0;
+  padding-bottom: 15px;
+}
+
+.related-item__row {
+  padding: 0;
+  margin: 0;
+  display: block;
+  padding-bottom: 15px;
 }
 
 .related-item__label {
