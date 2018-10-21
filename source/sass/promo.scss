@@ -1,16 +1,24 @@
 .promo {
   font-family: $main-font;
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
   color: #ffffff;
   position: relative;
-  padding-left: 20px;
-  padding-right: 20px;
   margin-bottom: 22px;
+
+  &::before {
+    content: "";
+    width: 320px;
+    height: 305px;
+    position: absolute;
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-color: $brand-color;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    z-index: -1;
+  }
 }
 
 .promo__title {
+  font-family: $main-font;
   padding: 0;
   margin: 0;
   font-size: 36px;
@@ -29,4 +37,76 @@
   line-height: 14px;
   font-weight: 400;
   text-align: center;
+  padding-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    width: 708px;
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 90px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .promo__title {
+    width: 487px;
+    font-size: 60px;
+    line-height: 60px;
+    color: $font-color-title;
+    text-align: left;
+    margin-bottom: 35px;
+    order: 1;
+  }
+
+  .promo__text {
+    width: 487px;
+    font-size: 20px;
+    line-height: 20px;
+    color: $font-color-title;
+    text-align: left;
+    margin-bottom: 45px;
+    order: 1;
+  }
+
+  .promo__image {
+    order: 3;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    position: relative;
+    width: auto;
+    min-height: 630px;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 650px;
+      height: 696px;
+      right: 0;
+      top: -81px;
+      z-index: -1;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-color: $brand-color;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .promo__wrap {
+    width: 410px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .promo__image {
+    position: absolute;
+  }
 }

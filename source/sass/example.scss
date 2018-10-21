@@ -1,39 +1,45 @@
 .example {
   font-family: $main-font;
   background-color: $brand-color-alt;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .example__title {
   padding: 0;
   margin: 0;
+  color: $font-color-title;
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
 }
 
 .example__text {
+  padding: 0;
+  margin: 0;
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 18px;
   color: $font-color;
   font-weight: normal;
+  text-align: left;
+  padding-right: 14px;
 }
 
 .example__options {
   background-color: $brand-color-alt;
   position: relative;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #cdcdcd;
+  width: 120px;
+  padding: 5px 5px 30px;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 124px;
-    height: 56px;
-    border: 1px solid #cdcdcd;
-    z-index: 1;
-  }
+.example__options-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 25px;
 }
 
 .example__result-value {
@@ -45,7 +51,6 @@
   line-height: 24px;
   font-weight: normal;
   text-transform: uppercase;
-  z-index: 2;
 }
 
 .example__result {
@@ -53,15 +58,22 @@
   color: $font-color;
   padding: 0;
   margin: 0;
-  position: relative;
   font-size: 12px;
   line-height: 12px;
   font-weight: normal;
   text-transform: lowercase;
+  position: absolute;
+  bottom: -17px;
   z-index: 2;
+  text-align: center;
+  width: 85px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: $brand-color-alt;
 }
 
 .example__food-cost {
+  margin: 0;
   font-family: $main-font;
   font-size: 14px;
   line-height: 20px;
@@ -69,10 +81,225 @@
   color: $font-color-title;
   text-align: center;
   text-transform: uppercase;
+  padding: 0 5px 20px;
 }
 
 .example__toggle {
-  background-color: $brand-color-alt;
   border: none;
   text-transform: uppercase;
+  background-color: transparent;
+}
+
+.example__before-after {
+  position: relative;
+  padding-bottom: 40px;
+  background-color: $brand-color-alt;
+}
+
+.example__image--before {
+  width: 100%;
+  background-image: url("../img/before-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  min-height: 320px;
+}
+
+.example__toggles-bar {
+  position: absolute;
+  width: 100%;
+  bottom: 40px;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    background-color: #ffffff;
+    border-top: 1px solid;
+  }
+
+  .example_container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .example__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .example__options-wrap {
+    width: 384px;
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .example__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .example__options {
+    background-color: #ffffff;
+  }
+
+  .example__result-value {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .example__result {
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #ffffff;
+  }
+
+  .example__food-cost {
+    width: 192px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+    margin-left: auto;
+  }
+
+  .example__toggle {
+    position: relative;
+    font-size: 20px;
+    line-height: 20px;
+    z-index: 3;
+  }
+
+  .example__toggles {
+    position: relative;
+    display: flex;
+    justify-content: stretch;
+    align-content: stretch;
+    min-width: 690px;
+  }
+
+  .example__before-after {
+    box-shadow: inset 0 200px 0 #ffffff;
+  }
+  // Левая сторона
+  .example__before {
+    width: 100%;
+  }
+
+  .example__image--before {
+    position: relative;
+    background-image: url("../img/before-tablet@1x.png");
+    background-position-x: 0%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 520px;
+    z-index: 2;
+  }
+
+  .example__toggle-before {
+    position: relative;
+    background-color: #eaeaea;
+    z-index: 3;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  // Правая сторона
+
+  .example__after {
+    position: relative;
+    width: 0;
+  }
+
+  .example__image--after {
+    position: relative;
+    background-image: url("../img/after-tablet@1x.png");
+    background-position-x: 100%;
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+
+  .example__toggles-bar {
+    position: absolute;
+    width: 428px;
+    height: 6px;
+    background-color: #dcdcdc;
+    z-index: 3;
+    bottom: 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 34px;
+      height: 34px;
+      background-color: #ffffff;
+      border-radius: 50%;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background-color: $brand-color;
+      border-radius: 50%;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    background-color: $brand-color-alt;
+    box-shadow: inset 0 200px 0 #ffffff;
+  }
+
+  .example__desktop-wrap-1 {
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 65px;
+  }
+
+  .example__desktop-wrap-2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .example__title {
+    padding-bottom: 140px;
+  }
+
+  .example__text {
+    padding-left: 35px;
+    padding-bottom: 75px;
+  }
+
+  .example__before-after {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .example__options-wrap {
+    background-color: $brand-color-alt;
+  }
+
+  .example__options {
+    background-color: $brand-color-alt;
+  }
+
+  .example__result {
+    background-color: $brand-color-alt;
+  }
+
+  .example__food-cost {
+    width: auto;
+  }
 }

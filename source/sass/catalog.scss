@@ -1,9 +1,31 @@
 .catalog {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-bottom: 35px;
 }
 
 .catalog__item {
   padding-bottom: 24px;
   border-bottom: 1px solid #ededed;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    margin-bottom: 70px;
+  }
+
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .catalog__item {
+    width: 324px;
+    background-color: $brand-color-alt;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__item {
+    width: 250px;
+  }
 }

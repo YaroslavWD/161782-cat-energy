@@ -1,8 +1,61 @@
+.checkbox {
+  padding: 12px 16px 12px 0;
+}
+
 .checkbox__text {
+  position: relative;
   font-family: $main-font;
   color: #222222;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
+  padding: 10px 10px 10px 40px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #cdcdcd;
+    top: 10px;
+    left: 0;
+  }
+}
+
+.checkbox__control {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .checkbox {
+    width: 313px;
+    position: relative;
+  }
+
+  .checkbox__text {
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 60px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      border: 1px solid #cdcdcd;
+      top: -10px;
+      left: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .checkbox {
+    width: 285px;
+  }
+
+  .checkbox__text {
+    padding-left: 80px;
+  }
 }

@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   margin-bottom: 14px;
+  display: flex;
 }
 
 .input__text {
@@ -11,14 +12,38 @@
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
+  padding-right: 15px;
 }
 
 .input__control {
   border: 1px solid #cdcdcd;
+  flex-grow: 1;
 
   &::placeholder {
     text-transform: uppercase;
     font-family: $main-font;
     color: $font-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .input {
+    display: flex;
+    align-items: center;
+  }
+
+  .input__text {
+    font-size: 20px;
+    line-height: 20px;
+    padding-right: 16px;
+  }
+
+  .input__control {
+    padding: 17px 20px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 20px;
+    }
   }
 }

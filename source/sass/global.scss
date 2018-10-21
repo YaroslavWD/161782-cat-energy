@@ -13,6 +13,18 @@ body {
   margin: 0 auto;
 }
 
+@media (min-width: $tablet-width) {
+  body {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    width: 1300px;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   overflow: hidden;

@@ -2,3 +2,21 @@
   padding-left: 20px;
   padding-right: 20px;
 }
+
+.wrap--footer-bottom {
+  background-color: $brand-color-alt;
+}
+
+@media (min-width: $tablet-width) {
+  .wrap {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .wrap {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
