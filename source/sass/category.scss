@@ -96,6 +96,50 @@
     flex-direction: column;
     padding: 75px 28px 55px 55px;
     padding-right: 290px;
+
+    &--slim::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/icon-cat-slim.svg");
+      background-repeat: no-repeat;
+      width: 141px;
+      height: 194px;
+      right: 80px;
+      z-index: 2;
+    }
+
+    &--slim::after {
+      content: "";
+      position: absolute;
+      background-color: $brand-color;
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      right: 60px;
+    }
+
+    &--pro::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/icon-cat-pro.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 268px;
+      height: 113px;
+      right: 30px;
+      top: 130px;
+      z-index: 2;
+    }
+
+    &--pro::after {
+      content: "";
+      position: absolute;
+      background-color: $brand-color;
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      right: 60px;
+    }
   }
 
   .category__title {
@@ -105,29 +149,11 @@
     text-align: left;
     padding-left: 0;
 
-    &--slim::before {
-      width: 141px;
-      height: 194px;
-      left: 480px;
-    }
-
-    &--slim::after {
-      width: 200px;
-      height: 200px;
-      left: 460px;
-    }
-
+    &--slim::after,
+    &--slim::before,
+    &--pro::after,
     &--pro::before {
-      width: 268px;
-      height: 113px;
-      left: 420px;
-      top: 130px;
-    }
-
-    &--pro::after {
-      width: 200px;
-      height: 200px;
-      left: 460px;
+      content: none;
     }
   }
 
@@ -149,10 +175,34 @@
     width: 570px;
     align-items: flex-start;
     padding: 40px 52px;
+
+
+    &--slim::after,
+    &--pro::after {
+      top: 30px;
+      left: 52px;
+      width: 100px;
+      height: 100px;
+    }
+
+    &--slim::before {
+      width: 70px;
+      height: 97px;
+      top: 25px;
+      left: 62px;
+    }
+
+    &--pro::before {
+      width: 134px;
+      height: 56px;
+      top: 50px;
+      left: 35px;
+    }
   }
 
   .category__title {
-    align-self: center;
+    padding-left: 166px;
+    padding-bottom: 80px;
 
     &::after {
       display: none;
