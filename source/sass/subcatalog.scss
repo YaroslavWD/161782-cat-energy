@@ -17,7 +17,9 @@
 
 
 .subcatalog__present {
+  min-height: 289px;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-color: $brand-color;
 }
 
 .subcatalog__present-text {
