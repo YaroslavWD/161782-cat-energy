@@ -1,6 +1,7 @@
 .contacts {
   display: flex;
-  padding: 30px 20px;
+  justify-content: space-between;
+  padding: 28px 20px 26px 20px;
   background-color: $brand-color-alt;
 }
 
@@ -17,6 +18,7 @@
   line-height: 20px;
   font-weight: normal;
   text-transform: uppercase;
+  width: 140px;
 }
 
 .contacts__address {
@@ -27,6 +29,11 @@
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
+  width: 140px;
+}
+
+.contacts__town {
+  display: block;
 }
 
 @media (min-width: $tablet-width) {

@@ -1,21 +1,50 @@
 .product-add {
   text-align: center;
+  padding-top: 79px;
+  padding-bottom: 24px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 30px;
+    background-color: #d3d3d3;
+    top: 26px;
+    left: 158px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #d3d3d3;
+    top: 40px;
+    left: 145px;
+  }
 }
 
 .product-add__title {
+  padding: 0;
+  margin: 0;
   font-family: $main-font;
   color: $font-color-title;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+  padding-bottom: 8px;
 }
 
 .product-add__options {
+  padding: 0;
+  margin: 0;
   font-family: $secondary-font;
   color: $font-color;
   font-size: 12px;
   line-height: 16px;
+  padding-bottom: 21px;
 }
 
 @media (min-width: $tablet-width) {

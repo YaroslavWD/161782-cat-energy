@@ -1,5 +1,6 @@
 .programm-form {
   font-family: $main-font;
+  padding-top: 25px;
   padding-bottom: 35px;
 }
 
@@ -11,13 +12,30 @@
   border: none;
   padding: 0;
   margin: 0;
-  padding-bottom: 20px;
+  padding-left: 19px;
+  padding-right: 20px;
+  padding-bottom: 9px;
+
+  &--radio {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 28px;
+  }
 }
 
 .programm-form__list {
   list-style: none;
   padding: 0;
   margin: 0;
+  padding-top: 10px;
+
+  &--radio {
+    padding-top: 21px;
+    padding-bottom: 6px;
+    padding-left: 19px;
+    padding-right: 20px;
+    border: 1px solid #ededed;
+  }
 }
 
 .programm-form__title {
@@ -27,6 +45,11 @@
   font-weight: 400;
   color: $font-color-title;
   padding-bottom: 31px;
+}
+
+.programm-form__contacts {
+  padding-top: 3px;
+  padding-bottom: 5px;
 }
 
 .programm-form__requared-text {

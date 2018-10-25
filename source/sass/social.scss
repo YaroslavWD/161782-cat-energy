@@ -1,17 +1,20 @@
 .social__list {
-  padding: 0;
   margin: 0;
-  padding-top: 22px;
-  padding-bottom: 21px;
+  padding: 22px 63px 17px 54px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
 }
 
-.social__link {
-  width: 30px;
-  height: 30px;
-  padding-left: 5px;
-  padding-right: 5px;
+.social__link--vk {
+  display: block;
+  padding-top: 3px;
+}
+
+.social__link--ig {
+  display: block;
+  padding-top: 3px;
 }

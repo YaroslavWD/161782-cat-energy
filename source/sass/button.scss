@@ -4,17 +4,19 @@
   text-align: center;
   font-family: $main-font;
   color: #ffffff;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 20px;
   text-decoration: none;
   text-transform: uppercase;
   width: 100%;
   min-height: 40px;
-  padding-top: 14px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 11px;
+  padding: 10px 20px;
   background-color: $brand-color;
+
+  &--promo {
+    font-size: 14px;
+    line-height: 18px;
+  }
 
   &--alt {
     background-color: $brand-color-alt;

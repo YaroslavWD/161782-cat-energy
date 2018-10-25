@@ -1,3 +1,7 @@
+.subcatalog {
+  padding-top: 28px;
+}
+
 .subcatalog__title {
   font-family: $main-font;
   color: $font-color-title;
@@ -6,7 +10,8 @@
   font-weight: normal;
   padding: 0;
   margin: 0;
-  padding-bottom: 30px;
+  padding-bottom: 33px;
+  border-bottom: 1px solid #cdcdcd;
 }
 
 .subcatalog__additional-list {
@@ -17,20 +22,34 @@
 
 
 .subcatalog__present {
+  margin-top: 39px;
   min-height: 289px;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-color: $brand-color;
 }
 
 .subcatalog__present-text {
+  padding: 0;
+  margin: 0;
   color: #ffffff;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-}
+  font-family: $secondary-font;
+  padding-left: 54px;
+  padding-right: 56px;
+  padding-top: 188px;
+  position: relative;
 
-.subcatalog__present-icon {
-  fill: #ffffff;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 56px;
+    height: 61px;
+    background-image: url("../img/icon-gift.svg");
+    top: 65px;
+    left: 113px;
+  }
 }
 
 .subcatalog__image {

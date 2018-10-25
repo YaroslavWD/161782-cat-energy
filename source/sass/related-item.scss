@@ -1,7 +1,7 @@
 .related-item {
-  padding-top: 15px;
+  padding-top: 13px;
   padding-bottom: 17px;
-  border-top: 1px solid #cdcdcd;
+  border-bottom: 1px solid #cdcdcd;
 }
 
 .related-item__title {
@@ -13,13 +13,14 @@
   font-weight: 400;
   padding: 0;
   margin: 0;
-  padding-bottom: 15px;
+  padding-bottom: 13px;
 }
 
 .related-item__row {
   padding: 0;
   margin: 0;
-  display: block;
+  display: flex;
+  justify-content: space-between;
   padding-bottom: 15px;
 }
 
