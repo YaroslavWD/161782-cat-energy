@@ -1,7 +1,7 @@
 .programm-form {
   font-family: $main-font;
   padding-top: 25px;
-  padding-bottom: 35px;
+  padding-bottom: 32px;
 }
 
 .programm-form__item {
@@ -17,9 +17,13 @@
   padding-bottom: 9px;
 
   &--radio {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
     padding-bottom: 28px;
+  }
+
+  &--textarea {
+    padding-bottom: 26px;
   }
 }
 
@@ -27,7 +31,6 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  padding-top: 10px;
 
   &--radio {
     padding-top: 21px;
@@ -35,6 +38,10 @@
     padding-left: 19px;
     padding-right: 20px;
     border: 1px solid #ededed;
+  }
+
+  &--checkbox {
+    padding-bottom: 20px;
   }
 }
 
@@ -45,6 +52,14 @@
   font-weight: 400;
   color: $font-color-title;
   padding-bottom: 31px;
+
+  &--textarea {
+    padding-bottom: 35px;
+  }
+
+  &--checkbox {
+    padding-bottom: 28px;
+  }
 }
 
 .programm-form__contacts {
@@ -52,13 +67,22 @@
   padding-bottom: 5px;
 }
 
+.programm-form__send {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .programm-form__requared-text {
+  display: block;
   font-family: $secondary-font;
   color: $font-color;
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
+  padding-top: 20px;
+  padding-left: 62px;
 }
+
 
 @media (min-width: $tablet-width) {
   .programm-form__fieldset {
