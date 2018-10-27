@@ -2,7 +2,20 @@
   font-family: $main-font;
   color: #ffffff;
   position: relative;
-  // margin-bottom: 15px;
+}
+
+.header-site__top {
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 11px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.header-site__wrap {
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -11,6 +24,12 @@
     display: flex;
     padding-left: 30px;
     padding-right: 30px;
+    padding-top: 22px;
+    padding-bottom: 20px;
+  }
+
+  .header-site__top {
+    border: none;
   }
 }
 

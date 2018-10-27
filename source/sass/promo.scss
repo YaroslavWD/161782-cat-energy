@@ -45,10 +45,13 @@
 @media (min-width: $tablet-width) {
   .promo {
     width: 708px;
+    min-height: 850px;
     background-image: none;
     display: flex;
     flex-direction: column;
-    padding-left: 90px;
+    padding-left: 88px;
+    padding-top: 39px;
+    position: relative;
 
     &::before {
       display: none;
@@ -61,7 +64,7 @@
     line-height: 60px;
     color: $font-color-title;
     text-align: left;
-    margin-bottom: 35px;
+    padding-bottom: 41px;
     order: 1;
   }
 
@@ -71,12 +74,15 @@
     line-height: 20px;
     color: $font-color-title;
     text-align: left;
-    margin-bottom: 45px;
+    padding-bottom: 48px;
     order: 1;
   }
 
   .promo__image {
-    order: 3;
+    position: absolute;
+    bottom: 0;
+    left: 29px;
+    z-index: -1;
   }
 }
 

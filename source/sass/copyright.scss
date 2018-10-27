@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  padding-top: 30px;
+  padding-top: 19px;
 }
 
 .copyright__link {
@@ -12,12 +12,15 @@
   line-height: 16px;
   font-weight: 400;
   text-decoration: none;
-  width: 140px;
+
+  &--name {
+    padding-top: 11px;
+  }
 }
 
 .copyright__htmlacademy-logo {
-  width: 27px;
-  height: 34px;
+  width: 40px;
+  margin-right: -6px;
 }
 
 .copyright__logo-style {

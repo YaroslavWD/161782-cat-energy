@@ -31,7 +31,14 @@
 
 @media (min-width: $tablet-width) {
   .button {
-    order: 2;
+    &--promo {
+      font-size: 20px;
+      line-height: 20px;
+      width: 245px;
+      min-height: 52px;
+      padding-top: 15px;
+      padding-bottom: 16px;
+    }
 
     &--alt {
       margin-bottom: 20px;

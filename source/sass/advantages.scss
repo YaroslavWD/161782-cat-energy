@@ -10,7 +10,7 @@
   line-height: 60px;
   font-weight: 400;
   color: $font-color-title;
-  padding-bottom: 30px;
+  padding-bottom: 28px;
 }
 
 .advantages__list {
@@ -26,50 +26,42 @@
   line-height: 18px;
   font-weight: 400;
   padding-left: 80px;
-  padding-bottom: 26px;
+  padding-top: 2px;
+  padding-bottom: 24px;
 
   &::before {
     content: "";
     position: absolute;
     width: 60px;
     height: 60px;
-    top: -2px;
+    top: 0px;
     left: 0;
     background-color: $brand-color;
+    background-position: 5px;
+    background-repeat: no-repeat;
     z-index: 1;
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    background-position: 5px;
-    background-repeat: no-repeat;
-    width: 60px;
-    height: 60px;
-    top: -2px;
-    left: 0;
-    z-index: 2;
-  }
-
-  &--leaf::after {
+  &--leaf::before {
     background-image: url("../img/advantage-leaf@1x.png");
   }
 
-  &--powder::after {
+  &--powder::before {
     background-image: url("../img/advantage-powder@1x.png");
   }
 
-  &--diner::after {
+  &--diner::before {
     background-image: url("../img/advantage-dining@1x.png");
   }
 
-  &--clock::after {
+  &--clock::before {
     background-image: url("../img/advantage-clock@1x.png");
   }
 }
 
 @media (min-width: $tablet-width) {
   .advantages {
+    padding-top: 14px;
     padding-bottom: 55px;
     border-bottom: 1px solid #e6e6e6;
   }
@@ -77,6 +69,7 @@
   .advantages__title {
     font-size: 60px;
     line-height: 60px;
+    padding-bottom: 72px;
   }
 
   .advantages__list {
@@ -93,20 +86,16 @@
     line-height: 24px;
     padding-left: 0;
     padding-right: 75px;
-    padding-top: 110px;
-    padding-bottom: 40px;
+    padding-top: 112px;
+    padding-bottom: 50px;
+    margin-bottom: 83px;
     z-index: 2;
 
     &::before {
       width: 80px;
       height: 80px;
       top: 0;
-    }
-
-    &::after {
-      width: 80px;
-      height: 80px;
-      background-position: 15px;
+      background-position: 15px 17px;
     }
   }
 
@@ -121,8 +110,8 @@
       line-height: 281px;
       color: $brand-color-alt;
       font-family: $main-font;
-      left: 154px;
-      top: -150px;
+      left: 118px;
+      top: -154px;
       z-index: -1;
     }
 
@@ -132,14 +121,17 @@
 
     &--2::after {
       content: "2";
+      left: 112px;
     }
 
     &--3::after {
       content: "3";
+      left: 113px;
     }
 
     &--4::after {
       content: "4";
+      left: 113px;
     }
   }
 }

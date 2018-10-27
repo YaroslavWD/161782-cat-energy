@@ -12,14 +12,12 @@
   border: none;
   padding: 0;
   margin: 0;
-  padding-left: 19px;
-  padding-right: 20px;
   padding-bottom: 9px;
 
   &--radio {
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 28px;
+    padding: 0;
+    margin-bottom: 28px;
+    border: 1px solid #ededed;
   }
 
   &--textarea {
@@ -35,9 +33,6 @@
   &--radio {
     padding-top: 21px;
     padding-bottom: 6px;
-    padding-left: 19px;
-    padding-right: 20px;
-    border: 1px solid #ededed;
   }
 
   &--checkbox {
@@ -65,11 +60,6 @@
 .programm-form__contacts {
   padding-top: 3px;
   padding-bottom: 5px;
-}
-
-.programm-form__send {
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .programm-form__requared-text {
