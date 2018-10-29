@@ -6,7 +6,7 @@
 
 .header-site__top {
   position: relative;
-  padding-top: 5px;
+  padding-top: 14px;
   padding-bottom: 11px;
   border-bottom: 1px solid #e6e6e6;
 }
@@ -25,11 +25,20 @@
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 22px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .header-site__top {
     border: none;
+    padding-top: 0;
+  }
+
+  .header-site__wrap {
+    width: auto;
+    padding-left: 0;
+    margin-right: 0;
   }
 }
 

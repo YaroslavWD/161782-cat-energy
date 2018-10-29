@@ -145,6 +145,20 @@
   .example {
     background-color: #ffffff;
     border-top: 1px solid;
+    padding-top: 50px;
+  }
+
+  .example__tablet-wrap {
+    padding: 0;
+    width: auto;
+  }
+
+  .example__desktop-wrap-2 {
+    width: 768px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .example_container {
@@ -163,20 +177,27 @@
     background-color: #ffffff;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .example__title {
     font-size: 60px;
     line-height: 60px;
+    padding-bottom: 63px;
   }
 
   .example__text {
     font-size: 16px;
     line-height: 24px;
+    padding-bottom: 53px;
   }
 
   .example__options {
     background-color: #ffffff;
+    width: 163px;
+    margin-right: 17px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .example__result-value {
@@ -188,6 +209,8 @@
     font-size: 14px;
     line-height: 14px;
     background-color: #ffffff;
+    width: 138px;
+    bottom: -6px;
   }
 
   .example__food-cost {
@@ -196,6 +219,13 @@
     line-height: 20px;
     text-align: right;
     margin-left: auto;
+    padding-top: 11px;
+    padding-right: 0;
+  }
+
+  .example__food-sum {
+    display: block;
+    padding-top: 10px;
   }
 
   .example__toggle {
@@ -216,6 +246,7 @@
   .example__before-after {
     box-shadow: inset 0 200px 0 #ffffff;
   }
+
   // Левая сторона
   .example__before {
     width: 100%;

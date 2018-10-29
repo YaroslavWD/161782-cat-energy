@@ -16,7 +16,16 @@
 
 @media (min-width: $tablet-width) {
   .catalog {
-    margin-bottom: 70px;
+    margin-bottom: 41px;
+    padding-top: 38px;
+  }
+
+  .catalog__wrap-tablet {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .catalog__list {
@@ -28,6 +37,11 @@
   .catalog__item {
     width: 324px;
     background-color: $brand-color-alt;
+  }
+
+  .catalog__wrap {
+    width: auto;
+    padding: 0;
   }
 }
 

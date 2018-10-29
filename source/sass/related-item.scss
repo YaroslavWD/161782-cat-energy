@@ -43,21 +43,31 @@
 @media (min-width: $tablet-width) {
   .related-item {
     border: 1px solid #cdcdcd;
-    padding: 28px 37px;
+    padding-top: 24px;
+    padding-left: 37px;
+    padding-right: 37px;
+    padding-bottom: 28px;
     margin-bottom: -1px;
   }
 
   .related-item__wrap {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 7px;
   }
 
   .related-item__title {
     font-size: 20px;
     line-height: 20px;
     text-transform: uppercase;
+    padding-left: 1px;
   }
+
+  .related-item__row {
+    padding-top: 4px;
+    display: flex;
+  }
+
 
   .related-item__label {
     font-size: 16px;
@@ -67,7 +77,8 @@
   .related-item__value {
     font-size: 16px;
     line-height: 20px;
-    padding-left: 50px;
+    min-width: 94px;
+    text-align: right;
   }
 }
 

@@ -58,10 +58,15 @@
 }
 
 @media (min-width: $tablet-width) {
+  .subcatalog {
+    padding-top: 61px;
+  }
+
   .subcatalog__title {
     font-size: 36px;
     line-height: 36px;
-    padding-bottom: 75px;
+    padding-bottom: 80px;
+    padding-left: 37px;
   }
 
   .subcatalog__present {
@@ -71,7 +76,20 @@
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-end;
+    margin-top: 69px;
+    padding-left: 150px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 56px;
+      height: 61px;
+      background-image: url("../img/icon-gift.svg");
+      top: 65px;
+      left: 90px;
+    }
   }
 
   .subcatalog__image {
@@ -80,11 +98,17 @@
   }
 
   .subcatalog__present-text {
-    width: 160px;
+    width: 162px;
     position: relative;
     text-align: left;
     margin: 0;
     padding: 0;
+    margin-right: 123px;
+    padding-top: 2px;
+
+    &::before {
+      content: none;
+    }
   }
 }
 
