@@ -76,38 +76,78 @@
 
 @media (min-width: $tablet-width) {
   .programm-form__fieldset {
-    padding-bottom: 70px;
+    padding-bottom: 53px;
     display: flex;
     flex-direction: column;
+    margin-right: 40px;
+    margin-left: 40px;
+
+    &--radio {
+      border: none;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 23px;
+    }
+
+    &--contacts {
+      padding-bottom: 43px;
+    }
+
+    &--textarea {
+      padding-bottom: 65px;
+    }
+
+    &--checkbox {
+      padding-bottom: 24px;
+    }
   }
 
   .programm-form__title {
     font-size: 36px;
     line-height: 36px;
     padding-bottom: 70px;
+
+    &--textarea {
+      padding-bottom: 75px;
+    }
+
+    &--checkbox {
+      padding-bottom: 50px;
+    }
   }
 
   .programm-form__list {
     display: flex;
     flex-direction: column;
-  }
+   }
 
   .programm-form__list--radio {
-    padding: 25px 28px;
+    padding: 23px 26px 12px;
     border: 1px solid #cdcdcd;
+    margin-left: 40px;
+    margin-right: 40px;
   }
 
   .programm-form__list--checkbox {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 0;
   }
 
   .programm-form__send {
     display: flex;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .programm-form__requared-text {
     order: 2;
+    padding-top: 0;
+    font-size: 16px;
+    padding-left: 0;
   }
 }

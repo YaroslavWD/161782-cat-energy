@@ -16,5 +16,12 @@
   .textarea {
     width: 100%;
     border: 1px solid #cdcdcd;
+    padding: 9px 17px;
+    min-height: 174px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 }

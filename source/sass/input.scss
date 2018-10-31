@@ -32,16 +32,18 @@
   .input {
     display: flex;
     align-items: center;
+    padding-bottom: 18px;
   }
 
   .input__text {
     font-size: 20px;
     line-height: 20px;
     padding-right: 16px;
+    padding-top: 0;
   }
 
   .input__control {
-    padding: 17px 20px;
+    padding: 17px 18px;
 
     &::placeholder {
       font-size: 20px;

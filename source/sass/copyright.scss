@@ -14,7 +14,14 @@
   text-decoration: none;
 
   &--name {
-    padding-top: 11px;
+    padding-top: 12px;
+    padding-right: 16px;
+  }
+
+  &--logo {
+    padding-top: 1px;
+    width: 40px;
+    margin-right: -6px;
   }
 }
 
@@ -25,4 +32,10 @@
 
 .copyright__logo-style {
   fill: #444444;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    padding-top: 0;
+  }
 }

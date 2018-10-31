@@ -29,14 +29,16 @@
 
 @media (min-width: $tablet-width) {
   .checkbox {
-    width: 313px;
+    width: 286px;
     position: relative;
+    padding-top: 14px;
+    margin-bottom: 26px;
   }
 
   .checkbox__text {
     font-size: 20px;
     line-height: 20px;
-    padding-left: 60px;
+    padding-left: 58px;
 
     &::before {
       content: "";
@@ -44,8 +46,8 @@
       width: 40px;
       height: 40px;
       border: 1px solid #cdcdcd;
-      top: -10px;
-      left: 0;
+      top: 10px;
+      left: 1px;
     }
   }
 }
