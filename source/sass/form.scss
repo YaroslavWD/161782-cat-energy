@@ -35,6 +35,7 @@
     flex-direction: column;
   }
 }
+
 @media (min-width: $desktop-width) {
   .form {
     padding-top: 56px;
@@ -43,5 +44,4 @@
   .form__description {
     margin-left: 0;
   }
-
 }

@@ -199,17 +199,14 @@
     padding-right: 40px;
   }
 
-  .programm-form__contacts {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
   .programm-form__list--radio {
     margin: 0;
     padding-top: 25px;
   }
 
   .programm-form__contacts {
+    padding-top: 0;
+    padding-bottom: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
