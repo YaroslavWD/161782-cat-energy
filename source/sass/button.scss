@@ -39,6 +39,7 @@
       min-height: 52px;
       padding-top: 15px;
       padding-bottom: 16px;
+      margin-left: 88px;
     }
 
     &--alt {
@@ -62,12 +63,27 @@
 }
 
 @media (min-width: $desktop-width) {
-  .button--related-item {
-    width: 245px;
-  }
+  .button {
+    &--promo {
+      order: 2;
+      margin-left: 80px;
+    }
 
-  .button--form {
-    width: 570px;
-    margin-right: 80px;
+    &--catalog {
+      width: 169px;
+      margin-left: 41px;
+      margin-right: 43px;
+    }
+
+
+    &--related-item {
+      width: 245px;
+    }
+
+    &--form {
+      width: 570px;
+      margin-right: 81px;
+      border: none;
+    }
   }
 }

@@ -136,7 +136,25 @@
 }
 
 @media (min-width: $desktop-width) {
+  .advantages {
+    padding-top: 43px;
+  }
+
+  .advantages__list {
+    justify-content: flex-start;
+  }
+
   .advantages__item {
-    width: 285px;
+    width: 245px;
+    margin-right: 80px;
+    padding-right: 0;
+
+    &::before {
+      top: 39px;
+    }
+  }
+
+  .advantages__item:nth-child(4n) {
+    margin-right: 0;
   }
 }

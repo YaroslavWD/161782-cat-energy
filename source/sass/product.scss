@@ -87,6 +87,7 @@
   .product__image {
     padding-top: 52px;
     padding-bottom: 16px;
+    min-width: 242px;
 
     &--big {
       padding-top: 16px;
@@ -139,10 +140,16 @@
 
 @media (min-width: $desktop-width) {
   .product {
-    padding: 40px 38px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   .product__title {
-    padding: 120px 23px 25px 22px;
+    padding: 0px 49px 23px 47px;
+  }
+
+  .product__row {
+    margin-left: 40px;
+    margin-right: 45px;
   }
 }

@@ -17,11 +17,8 @@
 
 @media (min-width: $tablet-width) {
   .form {
-    padding-left: 30px;
-    padding-right: 30px;
     margin-bottom: 42px;
     padding-top: 37px;
-
   }
 
   .form__description {
@@ -34,9 +31,17 @@
   }
 
   .programm-form {
-    padding-left: 40px;
-    padding-right: 37px;
     display: flex;
     flex-direction: column;
   }
+}
+@media (min-width: $desktop-width) {
+  .form {
+    padding-top: 56px;
+  }
+
+  .form__description {
+    margin-left: 0;
+  }
+
 }

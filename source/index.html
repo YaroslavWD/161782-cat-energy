@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<66d2e9f1-3a71-4847-8140-68563534bc8c>" type="text/javascript"></script>
+    <script src="mapbasics.js" type="text/javascript"></script>
   </head>
   <body>
-    <header class="header-site">
+    <header class="header-site header-site--index">
       <div class="header-site__top">
         <div class="header-site__wrap">
           <div class="logo">
@@ -17,10 +19,10 @@
               <img srcset="img/logo-mobile.svg" alt="cat-energy">
             </picture>
           </div>
-          <button class="menu-button"></button>
+          <button class="menu-button menu-button--close"></button>
         </div>
       </div>
-      <nav class="main-menu">
+      <nav class="main-menu main-menu--close">
         <ul class="main-menu__list">
           <li class="main-menu__item"><a class="main-menu__link main-menu__link--index main-menu__link--active">Главная</a></li>
           <li class="main-menu__item"><a class="main-menu__link main-menu__link--index" href="catalog.html">Каталог продукции</a></li>
@@ -35,6 +37,7 @@
           <b class="promo__text">Занялся собой? Займись котом!</b>
           <div class="promo__image">
             <picture>
+              <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png">
               <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
               <img src="img/index-can-mobile@1x.png" alt="Cat-Energy Курица">
             </picture>
@@ -47,7 +50,7 @@
         <h2 class="visually-hidden">Наши программы</h2>
           <article class="category category--slim">
             <h2 class="category__title category__title--slim">Похудение</h2>
-            <p class="category__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <p class="category__text category__text--slim">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a class="category__link " href="slim.catalog.html">Каталог slim</a>
           </article>
           <article class="category category--pro">
@@ -114,7 +117,7 @@
             <p class="contacts__offer">приглашаем<br> к сотрудничеству дилеров!</p>
             <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__town">Санкт-Петербург</span></p>
           </div>
-        <div class="map wrap">
+        <div class="map" id="map">
         </div>
       </section>
       <div class="footer__wrap">

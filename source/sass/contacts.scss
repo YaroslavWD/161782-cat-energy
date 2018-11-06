@@ -71,17 +71,20 @@
     top: 95px;
     left: 110px;
     z-index: 2;
-    padding: 66px 90px 62px 76px;
+    padding: 66px 87px 62px 76px;
   }
 
   .contacts__offer {
-    display: block;
-    padding-right: 90px;
+    padding-right: 84px;
     width: auto;
+    padding-top: 10px;
   }
 
   .contacts__address {
     display: block;
-    width: auto;
+    width: 245px;
+    text-align: left;
+    padding-left: 9px;
+    padding-top: 7px;
   }
 }

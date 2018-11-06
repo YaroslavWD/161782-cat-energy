@@ -1,10 +1,10 @@
 .main-menu {
+  display: none;
   background-color: #ffffff;
   color: $font-color-title;
 }
 
 .main-menu__list {
-  display: none;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -33,6 +33,7 @@
 
 @media (min-width: $tablet-width) {
   .main-menu {
+    display: block;
     padding: 0;
     margin-left: auto;
   }
@@ -61,6 +62,26 @@
 @media (min-width: $desktop-width) {
   .main-menu {
     background-color: transparent;
+  }
+
+  .main-menu__list {
+    min-width: 478px;
+    justify-content: flex-start;
+  }
+
+  .main-menu__item {
+    margin-right: 35px;
+  }
+
+  .main-menu__item:last-child {
+    margin-right: 0;
+  }
+
+  .main-menu__link {
+    font-size: 20px;
+    line-height: 20.89px;
+    padding-top: 22px;
+    padding-bottom: 12px;
   }
 
   .main-menu__link--index {

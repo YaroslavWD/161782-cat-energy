@@ -85,9 +85,28 @@
 @media (min-width: $desktop-width) {
   .related-item {
     display: flex;
-    padding: 15px 0;
+    padding: 16px 0;
     border-left: 0;
     border-right: 0;
+    padding-top: 15px;
+  }
+
+  .related-item__title {
+    padding-bottom: 0;
+  }
+
+  .related-item__row {
+    padding-top: 5px;
+    padding-bottom: 0;
+  }
+
+  .related-item__label {
+    min-width: 244px;
+  }
+
+  .related-item__value {
+    min-width: 40px;
+    text-align: left;
   }
 
   .related-item__wrap {

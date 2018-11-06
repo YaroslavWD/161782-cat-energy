@@ -23,5 +23,11 @@
     width: $desktop-width;
     padding-left: 40px;
     padding-right: 40px;
+
+    &--nowrap {
+      width: auto;
+      padding: 0;
+      margin: 0;
+    }
   }
 }

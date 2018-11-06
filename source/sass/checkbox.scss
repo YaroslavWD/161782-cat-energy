@@ -54,10 +54,17 @@
 
 @media (min-width: $desktop-width) {
   .checkbox {
-    width: 285px;
+    width: 245px;
+    padding-top: 4px;
   }
 
   .checkbox__text {
-    padding-left: 80px;
+    padding-left: 59px;
+    display: block;
+
+    &::before {
+      top: 1px;
+      left: 0;
+    }
   }
 }

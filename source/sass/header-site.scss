@@ -16,6 +16,7 @@
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
+  position: relative;
 }
 
 @media (min-width: $tablet-width) {
@@ -48,5 +49,30 @@
     display: flex;
     padding-left: 40px;
     padding-right: 40px;
+    padding-top: 52px;
+  }
+
+  .header-site--index {
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 650px;
+      height: 696px;
+      z-index: -1;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-color: $brand-color;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 0 0;
+      right: 1px;
+      top: 0;
+    }
+  }
+
+  .header-site__wrap {
+    width: auto;
+    padding: 0;
+    margin: 0;
   }
 }

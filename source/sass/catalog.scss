@@ -46,6 +46,16 @@
 }
 
 @media (min-width: $desktop-width) {
+  .catalog {
+    padding-top: 56px;
+  }
+
+  .catalog__wrap-tablet {
+    width: 1300px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
   .catalog__item {
     width: 250px;
   }
