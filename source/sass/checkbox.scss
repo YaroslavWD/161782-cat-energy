@@ -27,6 +27,18 @@
   display: none;
 }
 
+.checkbox__control:checked + .checkbox__text::after {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 16px;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  top: 16px;
+  left: 5px;
+  color: $brand-color;
+}
+
 @media (min-width: $tablet-width) {
   .checkbox {
     width: 286px;
@@ -46,9 +58,14 @@
       width: 40px;
       height: 40px;
       border: 1px solid #cdcdcd;
-      top: 10px;
-      left: 1px;
+      top: 8px;
+      left: 0;
     }
+  }
+
+  .checkbox__control:checked + .checkbox__text::after {
+    top: 20px;
+    left: 10px;
   }
 }
 
@@ -66,5 +83,10 @@
       top: 1px;
       left: 0;
     }
+  }
+
+  .checkbox__control:checked + .checkbox__text::after {
+    top: 14px;
+    left: 10px;
   }
 }

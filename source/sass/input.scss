@@ -28,6 +28,21 @@
   }
 }
 
+.input--contacts {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 17px;
+    height: 13px;
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    right: 0;
+    top: 10px;
+    z-index: 5;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .input {
     display: flex;
@@ -75,6 +90,21 @@
     .input__control {
       padding-left: 17px;
       padding-right: 40px;
+      position: relative;
+
+      &--email::after {
+        content: "";
+        position: absolute;
+        width: 17px;
+        height: 13px;
+        background-image: url("../img/icon-mail.svg");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        right: 0;
+        top: 0;
+        border: 2px solid red;
+        z-index: 5;
+      }
     }
   }
 }

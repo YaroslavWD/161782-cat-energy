@@ -109,6 +109,17 @@
 
     &--textarea {
       padding-bottom: 75px;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100vw;
+        height: 3px;
+        background-color: $brand-color;
+        left: 1px;
+        top: 10px;
+      }
     }
 
     &--checkbox {

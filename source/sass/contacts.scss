@@ -67,11 +67,13 @@
 @media (min-width: $desktop-width) {
   .contacts {
     width: 570px;
+    min-height: 201px;
     position: absolute;
-    top: 95px;
+    top: 96px;
     left: 110px;
     z-index: 2;
-    padding: 66px 87px 62px 76px;
+    padding: 55px 87px 55px 76px;
+    background-color: #ffffff;
   }
 
   .contacts__offer {
