@@ -93,34 +93,33 @@
     }
   }
 }
+
 @media (min-width: $desktop-width) {
-    .input--contacts {
-      min-width: 570px;
-    }
-
-    .input__text {
-      padding-right: 18px;
-
-      &--email {
-        padding-right: 22px;
-      }
-
-      &--phone {
-        padding-right: 16px;
-      }
-    }
-
-    .input__control {
-      padding-left: 17px;
-      padding-right: 40px;
-      position: relative;
-    }
-
   .input--contacts {
+    min-width: 570px;
+
     &::after {
       top: 21px;
       right: 19px;
     }
+  }
+
+  .input__text {
+    padding-right: 18px;
+
+    &--email {
+      padding-right: 22px;
+    }
+
+    &--phone {
+      padding-right: 16px;
+    }
+  }
+
+  .input__control {
+    padding-left: 17px;
+    padding-right: 40px;
+    position: relative;
   }
 
   .input--phone {
