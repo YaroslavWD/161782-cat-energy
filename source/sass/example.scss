@@ -240,32 +240,30 @@
     display: flex;
     justify-content: stretch;
     align-content: stretch;
-    min-width: 690px;
+    min-height: 670px;
   }
 
   .example__before-after {
-    box-shadow: inset 0 200px 0 #ffffff;
+    box-shadow: inset 0 210px 0 #ffffff;
+    padding-bottom: 0;
   }
 
   // Левая сторона
   .example__before {
-    width: 100%;
+    width: 50%;
   }
 
   .example__image--before {
     position: relative;
     background-image: url("../img/before-tablet@1x.png");
-    background-position-x: 0%;
+    background-position: 46px 40px;
     background-repeat: no-repeat;
-    background-size: contain;
-    width: 100%;
-    height: 520px;
+    height: 560px;
     z-index: 2;
   }
 
   .example__toggle-before {
     position: relative;
-    background-color: #eaeaea;
     z-index: 3;
     font-size: 20px;
     line-height: 20px;
@@ -275,24 +273,42 @@
 
   .example__after {
     position: relative;
-    width: 0;
+    width: 50%;
   }
 
   .example__image--after {
     position: relative;
     background-image: url("../img/after-tablet@1x.png");
-    background-position-x: 100%;
+    background-position: -338px 41px;
     background-repeat: no-repeat;
+    width: 100%;
+    height: 560px;
     z-index: 2;
   }
 
   .example__toggles-bar {
     position: absolute;
+    width: 100%;
+    z-index: 3;
+    bottom: 61px;
+    padding-left: 91px;
+    padding-right: 92px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    &::before,
+    &::after {
+      content: none;
+    }
+  }
+
+  .example__progress-bar {
     width: 428px;
     height: 6px;
     background-color: #dcdcdc;
     z-index: 3;
-    bottom: 0;
+    margin-top: 9px;
+    border-radius: 5px;
 
     &::after {
       content: "";
@@ -302,6 +318,8 @@
       background-color: #ffffff;
       border-radius: 50%;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+      top: 5px;
+      left: 367px;
     }
 
     &::before {
@@ -311,6 +329,9 @@
       height: 8px;
       background-color: $brand-color;
       border-radius: 50%;
+      top: 18px;
+      left: 380px;
+      z-index: 5;
     }
   }
 }
@@ -318,15 +339,13 @@
 @media (min-width: $desktop-width) {
   .example {
     background-color: $brand-color-alt;
-    box-shadow: inset 0 200px 0 #ffffff;
+    box-shadow: inset 0 211px 0 #ffffff;
     padding-top: 0;
     border-top: none;
   }
 
   .example__desktop-wrap-1 {
     display: flex;
-    padding-top: 30px;
-    padding-bottom: 65px;
     width: 1300px;
     margin-left: auto;
     margin-right: auto;
@@ -337,7 +356,8 @@
     flex-direction: column;
     padding-left: 41px;
     padding-right: 0;
-    width: auto;
+    padding-top: 76px;
+    width: 610px;
   }
 
   .example__wrap {
@@ -356,6 +376,7 @@
   .example__before-after {
     background-color: transparent;
     box-shadow: none;
+    width: 690px;
   }
 
   .example__options-wrap {
@@ -381,5 +402,35 @@
     display: inline-block;
     padding-left: 58px;
     vertical-align: bottom;
+  }
+
+  .example__toggles {
+    min-height: 672px;
+  }
+
+  .example__before {
+    width: 56%;
+  }
+
+  .example__image--before {
+    background-position: 0 20px;
+  }
+
+  .example__image--after {
+    background-position: -364px 20px;
+  }
+
+  .example__toggles-bar {
+    padding-left: 73px;
+    padding-right: 34px;
+    bottom: 62px;
+  }
+
+  .example__progress-bar::after {
+    left: 348px;
+  }
+
+  .example__progress-bar::before {
+    left: 361px;
   }
 }

@@ -37,9 +37,19 @@
     background-image: url("../img/icon-mail.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
-    right: 0;
-    top: 10px;
+    right: 16px;
+    top: 16px;
     z-index: 5;
+  }
+}
+
+.input--phone {
+  &::after {
+    width: 20px;
+    height: 20px;
+    top: 14px;
+    right: 14px;
+    background-image: url("../img/icon-phone.svg");
   }
 }
 
@@ -70,7 +80,20 @@
     }
   }
 
-  @media (min-width: $desktop-width) {
+  .input--contacts {
+    &::after {
+      top: 22px;
+    }
+  }
+
+  .input--phone {
+    &::after {
+      top: 19px;
+      right: 13px;
+    }
+  }
+}
+@media (min-width: $desktop-width) {
     .input--contacts {
       min-width: 570px;
     }
@@ -91,20 +114,19 @@
       padding-left: 17px;
       padding-right: 40px;
       position: relative;
+    }
 
-      &--email::after {
-        content: "";
-        position: absolute;
-        width: 17px;
-        height: 13px;
-        background-image: url("../img/icon-mail.svg");
-        background-repeat: no-repeat;
-        background-position: 0 0;
-        right: 0;
-        top: 0;
-        border: 2px solid red;
-        z-index: 5;
-      }
+  .input--contacts {
+    &::after {
+      top: 21px;
+      right: 19px;
+    }
+  }
+
+  .input--phone {
+    &::after {
+      top: 19px;
+      right: 19px;
     }
   }
 }
