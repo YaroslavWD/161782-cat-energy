@@ -3,26 +3,6 @@
   padding-top: 79px;
   padding-bottom: 24px;
   position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 2px;
-    height: 30px;
-    background-color: #d3d3d3;
-    top: 26px;
-    left: 158px;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 30px;
-    height: 2px;
-    background-color: #d3d3d3;
-    top: 40px;
-    left: 145px;
-  }
 }
 
 .product-add__title {
@@ -35,6 +15,28 @@
   line-height: 20px;
   font-weight: 400;
   padding-bottom: 8px;
+  position: relative;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 30px;
+    background-color: #d3d3d3;
+    top: -53px;
+    left: 140px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #d3d3d3;
+    top: -39px;
+    left: 126px;
+  }
 }
 
 .product-add__options {
@@ -60,6 +62,9 @@
     padding-bottom: 0;
 
     &::before {
+      content: "";
+      position: absolute;
+      background-color: #d3d3d3;
       width: 2px;
       height: 60px;
       top: 54px;
@@ -67,6 +72,9 @@
     }
 
     &::after {
+      content: "";
+      position: absolute;
+      background-color: #d3d3d3;
       width: 60px;
       height: 2px;
       top: 83px;
@@ -83,6 +91,11 @@
     font-size: 20px;
     line-height: 20px;
     padding-bottom: 26px;
+
+    &::after,
+    &::before {
+      content: none;
+    }
   }
 
   .product-add__options {

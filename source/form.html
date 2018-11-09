@@ -74,45 +74,57 @@
               </div>
             </fieldset>
           </div>
-          <div class="wrap">
-            <fieldset class="programm-form__fieldset programm-form__fieldset--contacts">
-              <legend class="programm-form__title">Контактные данные (владельца кота)</legend>
-              <div class="programm-form__contacts">
-                <p class="programm-form__item  input input--contacts">
-                  <label class="input__text input__text--email" for="email-field">e-mail:&#42;</label>
-                  <input class="input__control input__control--email" type="email" name="email" id="email-field" placeholder="kuklachev@gmail.com">
+          <fieldset class="programm-form__fieldset programm-form__fieldset--contacts">
+            <legend class="programm-form__title"><span class="programm-form__title-wrap programm-form__title-wrap--contacts"><span class="programm-form__title-text">Контактные данные (владельца кота)</span></span></legend>
+            <div class="wrap">
+              <div class="programm-form__wrap">
+                <div class="programm-form__contacts">
+                  <p class="programm-form__item  input input--contacts">
+                    <label class="input__text input__text--email" for="email-field">e-mail:&#42;</label>
+                    <input class="input__control input__control--email" type="email" name="email" id="email-field" placeholder="kuklachev@gmail.com">
+                  </p>
+                  <p class="programm-form__item input input--contacts input--phone">
+                    <label class="input__text input__text--phone" for="tel-field">Телефон:&#42;</label>
+                    <input class="input__control input__control--phone" type="tel" name="tel" id="tel-field" placeholder="8 (960) 900-60-90">
                 </p>
-                <p class="programm-form__item input input--contacts input--phone">
-                  <label class="input__text input__text--phone" for="tel-field">Телефон:&#42;</label>
-                  <input class="input__control input__control--phone" type="tel" name="tel" id="tel-field" placeholder="8 (960) 900-60-90">
-              </p>
+                </div>
               </div>
-            </fieldset>
-            <fieldset class="programm-form__fieldset programm-form__fieldset--textarea">
-              <legend class="programm-form__title programm-form__title--textarea">Комментарий</legend>
-              <textarea class="programm-form__item textarea" name="comment-field" placeholder="Расскажите обо всех повадках кота"></textarea>
-            </fieldset>
-            <fieldset class="programm-form__fieldset programm-form__fieldset--checkbox">
-              <legend class="programm-form__title programm-form__title--checkbox">Дополнительно</legend>
-              <ul class="programm-form__list programm-form__list--checkbox">
-                <li class="programm-form__item checkbox">
-                  <input class="checkbox__control" type="checkbox" id="sweetener" name="sweetener">
-                  <label class="checkbox__text" for="sweetener">Сахарозаменитель</label>
-                </li>
-                <li class="programm-form__item checkbox">
-                  <input class="checkbox__control" type="checkbox" id="water" name="water">
-                  <label class="checkbox__text" for="water">Питьевая вода</label>
-                </li>
-                <li class="programm-form__item checkbox">
-                  <input class="checkbox__control" type="checkbox" id="milk" name="milk">
-                  <label class="checkbox__text" for="milk">Молоко</label>
-                </li>
-                <li class="programm-form__item checkbox">
-                    <input class="checkbox__control" type="checkbox" id="vitamins" name="vitamins">
-                    <label class="checkbox__text" for="vitamins">Витамины</label>
-                </li>
-              </ul>
-            </fieldset>
+            </div>
+          </fieldset>
+          <fieldset class="programm-form__fieldset programm-form__fieldset--textarea">
+            <legend class="programm-form__title programm-form__title--textarea"><span class="programm-form__title-wrap"><span class="programm-form__title-text">Комментарий</span></span></legend>
+            <div class="wrap">
+              <div class="programm-form__wrap">
+                <textarea class="programm-form__item textarea" name="comment-field" placeholder="Расскажите обо всех повадках кота"></textarea>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="programm-form__fieldset programm-form__fieldset--checkbox">
+            <legend class="programm-form__title programm-form__title--checkbox"><span class="programm-form__title-wrap"><span class="programm-form__title-text">Дополнительно</span></span></legend>
+            <div class="wrap">
+              <div class="programm-form__wrap">
+                <ul class="programm-form__list programm-form__list--checkbox">
+                  <li class="programm-form__item checkbox">
+                    <input class="checkbox__control" type="checkbox" id="sweetener" name="sweetener">
+                    <label class="checkbox__text" for="sweetener">Сахарозаменитель</label>
+                  </li>
+                  <li class="programm-form__item checkbox">
+                    <input class="checkbox__control" type="checkbox" id="water" name="water">
+                    <label class="checkbox__text" for="water">Питьевая вода</label>
+                  </li>
+                  <li class="programm-form__item checkbox">
+                    <input class="checkbox__control" type="checkbox" id="milk" name="milk">
+                    <label class="checkbox__text" for="milk">Молоко</label>
+                  </li>
+                  <li class="programm-form__item checkbox">
+                      <input class="checkbox__control" type="checkbox" id="vitamins" name="vitamins">
+                      <label class="checkbox__text" for="vitamins">Витамины</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </fieldset>
+          <div class="wrap">
             <div class="programm-form__send">
               <button class="button button--form" type="submit">Отправить заявку</button>
               <span class="programm-form__requared-text">&#42; &mdash; Обязательные поля</span>

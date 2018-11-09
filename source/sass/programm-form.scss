@@ -47,6 +47,10 @@
   font-weight: 400;
   color: $font-color-title;
   padding-bottom: 31px;
+  position: relative;
+  background-color: #ffffff;
+  display: block;
+  width: 100%;
 
   &--textarea {
     padding-bottom: 35px;
@@ -55,6 +59,37 @@
   &--checkbox {
     padding-bottom: 28px;
   }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: $brand-color;
+    top: 14px;
+  }
+}
+
+.programm-form__title-wrap {
+  display: block;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 20px;
+
+  &--contacts {
+    padding-right: 97px;
+  }
+}
+
+.programm-form__title-text {
+  display: inline-block;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 2;
+  padding-right: 22px;
+  padding-left: 20px;
 }
 
 .programm-form__contacts {
@@ -79,8 +114,8 @@
     padding-bottom: 53px;
     display: flex;
     flex-direction: column;
-    margin-right: 40px;
-    margin-left: 40px;
+    margin-right: 0;
+    margin-left: 0;
 
     &--radio {
       border: none;
@@ -94,7 +129,7 @@
     }
 
     &--textarea {
-      padding-bottom: 65px;
+      padding-bottom: 64px;
     }
 
     &--checkbox {
@@ -115,11 +150,31 @@
     &--checkbox {
       padding-bottom: 50px;
     }
+
+    &::after {
+      top: 21px;
+    }
+  }
+
+  .programm-form__title-wrap {
+    width: 768px;
+    padding-right: 0;
+  }
+
+  .programm-form__title-text {
+    padding-right: 40px;
+    padding-left: 39px;
+    margin-left: 30px;
   }
 
   .programm-form__list {
     display: flex;
     flex-direction: column;
+  }
+
+  .programm-form__wrap {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .programm-form__list--radio {
@@ -168,9 +223,8 @@
 
   .programm-form__fieldset {
     min-width: 570px;
-    margin-left: 0;
-    margin-right: 0;
     padding-bottom: 51px;
+
 
     &--radio {
       margin-bottom: 0;
@@ -181,12 +235,27 @@
     }
 
     &--textarea {
-      padding-bottom: 68px;
+      padding-bottom: 66px;
     }
 
     &--checkbox {
       padding-bottom: 23px;
     }
+  }
+
+  .programm-form__title-wrap {
+    width: 1300px;
+    padding-left: 0;
+  }
+
+  .programm-form__title-text {
+    margin-left: 0;
+    padding-left: 40px;
+  }
+
+  .programm-form__wrap {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .programm-form__container {
@@ -201,7 +270,6 @@
   }
 
   .programm-form__list--radio {
-    margin: 0;
     padding-top: 25px;
   }
 

@@ -2,6 +2,14 @@
   padding-top: 28px;
 }
 
+.subcatalog__wrap {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .subcatalog__title {
   font-family: $main-font;
   color: $font-color-title;
@@ -11,26 +19,40 @@
   padding: 0;
   margin: 0;
   padding-bottom: 34px;
-  border-bottom: 1px solid #cdcdcd;
-}
+  position: relative;
 
-.subcatalog__title-text {
   &::after {
     content: "";
     position: absolute;
     display: block;
-    height: 2px;
-    background: $brand-color;
-    width: 100vw;
-    right: 0;
-    transform: translate(100%, -20px);
+    width: 100%;
+    height: 3px;
+    background-color: $brand-color;
+    top: 14px;
   }
+}
+
+.subcatalog__title-text {
+  background-color: #ffffff;
+  position: relative;
+  z-index: 2;
+  padding-right: 22px;
+  padding-left: 20px;
+}
+
+.subcatalog__text-wrap {
+  display: block;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 20px;
 }
 
 .subcatalog__additional-list {
   list-style: none;
   padding: 0;
   margin: 0;
+  border-top: 1px solid #cdcdcd;
 }
 
 
@@ -75,12 +97,38 @@
     padding-top: 61px;
   }
 
+  .subcatalog__wrap {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .subcatalog__text-wrap {
+    width: 768px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   .subcatalog__title {
     font-size: 36px;
     line-height: 36px;
     padding-bottom: 80px;
-    padding-left: 37px;
     position: relative;
+
+    &::after {
+      top: 22px;
+    }
+  }
+
+  .subcatalog__title-text {
+    padding-right: 36px;
+    padding-left: 37px;
+  }
+
+  .subcatalog__additional-list {
+    border: none;
   }
 
   .subcatalog__present {
@@ -139,6 +187,19 @@
 
   .subcatalog__wrap {
     display: flex;
+    width: 1300px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .subcatalog__text-wrap {
+    width: 1300px;
+    margin-left: 40px;
+    padding-right: 40px;
+  }
+
+  .subcatalog__title-text {
+    padding-left: 39px;
   }
 
   .subcatalog__additional-list {
