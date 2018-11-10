@@ -68,6 +68,11 @@
       background-position: 0 0;
       right: -70px;
       top: 0;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+        background-size: 720px auto;
+      }
     }
   }
 
