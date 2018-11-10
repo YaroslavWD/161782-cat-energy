@@ -115,8 +115,16 @@
   background-image: url("../img/before-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: -20px 15px;
+  background-size: 114%;
   min-height: 320px;
+
+  @media
+    (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../img/before-mobile@2x.png");
+  }
 }
+
 
 .example__toggles-bar {
   position: absolute;
@@ -251,7 +259,7 @@
     display: flex;
     justify-content: stretch;
     align-content: stretch;
-    min-height: 670px;
+    min-height: 672px;
   }
 
   .example__toggles-wrap {
