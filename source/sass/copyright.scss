@@ -1,3 +1,10 @@
+.copyright {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding-top: 19px;
+}
+
 .copyright__link {
   font-family: $secondary-font;
   color: $font-color;
@@ -5,15 +12,30 @@
   line-height: 16px;
   font-weight: 400;
   text-decoration: none;
-  width: 27px;
-  height: 34px;
+
+  &--name {
+    padding-top: 12px;
+    padding-right: 16px;
+  }
+
+  &--logo {
+    padding-top: 1px;
+    width: 40px;
+    margin-right: -6px;
+  }
 }
 
 .copyright__htmlacademy-logo {
-  width: 27px;
-  height: 34px;
+  width: 40px;
+  margin-right: -6px;
 }
 
 .copyright__logo-style {
   fill: #444444;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    padding-top: 0;
+  }
 }

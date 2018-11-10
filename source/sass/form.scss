@@ -1,6 +1,5 @@
 .form {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-top: 15px;
 }
 
 .form__description {
@@ -12,13 +11,14 @@
   line-height: 18px;
   text-transform: uppercase;
   padding-bottom: 14px;
+  text-align: left;
+  padding-right: 50px;
 }
 
 @media (min-width: $tablet-width) {
   .form {
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-bottom: 70px;
+    margin-bottom: 39px;
+    padding-top: 37px;
   }
 
   .form__description {
@@ -26,12 +26,23 @@
     font-size: 20px;
     line-height: 30px;
     margin-left: 40px;
+    padding-right: 0;
+    padding-bottom: 40px;
   }
 
   .programm-form {
-    padding-left: 40px;
-    padding-right: 37px;
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    padding-top: 56px;
+    margin-bottom: 49px;
+  }
+
+  .form__description {
+    margin-left: 0;
   }
 }

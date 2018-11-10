@@ -4,12 +4,43 @@
   position: relative;
 }
 
+.header-site__top {
+  position: relative;
+  padding-top: 14px;
+  padding-bottom: 11px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.header-site__wrap {
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+}
+
 @media (min-width: $tablet-width) {
   .header-site {
     width: 768px;
     display: flex;
     padding-left: 30px;
     padding-right: 30px;
+    padding-top: 22px;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header-site__top {
+    border: none;
+    padding-top: 0;
+    margin-right: 74px;
+  }
+
+  .header-site__wrap {
+    width: auto;
+    padding-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -19,5 +50,44 @@
     display: flex;
     padding-left: 40px;
     padding-right: 40px;
+    padding-top: 52px;
+  }
+
+  .header-site--index {
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 720px;
+      height: 696px;
+      z-index: -1;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-color: $brand-color;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 0 0;
+      right: -70px;
+      top: 0;
+    }
+  }
+
+  .header-container {
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 50%;
+      height: 696px;
+      z-index: -1;
+      background-color: $brand-color;
+      right: 1px;
+      top: 0;
+    }
+  }
+
+  .header-site__wrap {
+    width: auto;
+    padding: 0;
+    margin: 0;
   }
 }

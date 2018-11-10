@@ -1,7 +1,7 @@
 .input {
   padding: 0;
   margin: 0;
-  margin-bottom: 14px;
+  padding-bottom: 15px;
   display: flex;
 }
 
@@ -12,12 +12,14 @@
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
-  padding-right: 15px;
+  padding-right: 12px;
+  padding-top: 13px;
 }
 
 .input__control {
   border: 1px solid #cdcdcd;
   flex-grow: 1;
+  padding: 12px 15px;
 
   &::placeholder {
     text-transform: uppercase;
@@ -26,24 +28,104 @@
   }
 }
 
+.input--contacts {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 17px;
+    height: 13px;
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    right: 16px;
+    top: 16px;
+    z-index: 5;
+  }
+}
+
+.input--phone {
+  &::after {
+    width: 20px;
+    height: 20px;
+    top: 14px;
+    right: 14px;
+    background-image: url("../img/icon-phone.svg");
+  }
+}
+
 @media (min-width: $tablet-width) {
   .input {
     display: flex;
     align-items: center;
+    padding-bottom: 18px;
   }
 
   .input__text {
     font-size: 20px;
     line-height: 20px;
     padding-right: 16px;
+    padding-top: 0;
+
+    &--email {
+      padding-right: 20px;
+    }
   }
 
   .input__control {
-    padding: 17px 20px;
+    padding: 17px 18px;
 
     &::placeholder {
       font-size: 20px;
       line-height: 20px;
+    }
+  }
+
+  .input--contacts {
+    &::after {
+      top: 22px;
+    }
+  }
+
+  .input--phone {
+    &::after {
+      top: 19px;
+      right: 13px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .input--contacts {
+    min-width: 570px;
+
+    &::after {
+      top: 21px;
+      right: 19px;
+    }
+  }
+
+  .input__text {
+    padding-right: 18px;
+
+    &--email {
+      padding-right: 22px;
+    }
+
+    &--phone {
+      padding-right: 16px;
+    }
+  }
+
+  .input__control {
+    padding-left: 17px;
+    padding-right: 40px;
+    position: relative;
+  }
+
+  .input--phone {
+    &::after {
+      top: 19px;
+      right: 19px;
     }
   }
 }

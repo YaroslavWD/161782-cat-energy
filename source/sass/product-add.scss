@@ -1,58 +1,137 @@
 .product-add {
   text-align: center;
+  padding-top: 79px;
+  padding-bottom: 24px;
+  position: relative;
 }
 
 .product-add__title {
+  padding: 0;
+  margin: 0;
   font-family: $main-font;
   color: $font-color-title;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+  padding-bottom: 8px;
+  position: relative;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 30px;
+    background-color: #d3d3d3;
+    top: -53px;
+    left: 140px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #d3d3d3;
+    top: -39px;
+    left: 126px;
+  }
 }
 
 .product-add__options {
+  padding: 0;
+  margin: 0;
   font-family: $secondary-font;
   color: $font-color;
   font-size: 12px;
   line-height: 16px;
+  padding-bottom: 21px;
 }
 
 @media (min-width: $tablet-width) {
   .product-add {
     width: 324px;
-    margin-bottom: 30px;
+    margin-top: 135px;
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 1px solid #cdcdcd;
     padding-left: 38px;
     padding-right: 37px;
+    padding-bottom: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #d3d3d3;
+      width: 2px;
+      height: 60px;
+      top: 54px;
+      left: 161px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: #d3d3d3;
+      width: 60px;
+      height: 2px;
+      top: 83px;
+      left: 132px;
+    }
   }
 
   .product-add__title {
     margin: 0;
     padding: 0;
-    padding-top: 120px;
+    padding-top: 84px;
     padding-left: 57px;
     padding-right: 56px;
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 30px;
+    padding-bottom: 26px;
+
+    &::after,
+    &::before {
+      content: none;
+    }
   }
 
   .product-add__options {
     font-size: 16px;
-    line-height: 16px;
-    width: 172px;
+    line-height: 18px;
     padding: 0;
     margin: 0;
-    margin-bottom: 100px;
+    margin-bottom: 86px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .product-add {
     width: 250px;
+    padding-left: 0;
+    padding-right: 0;
+
+    &::after {
+      top: 84px;
+      left: 97px;
+    }
+
+    &::before {
+      left: 126px;
+    }
+  }
+
+  .product-add__title {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .product-add__options {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }

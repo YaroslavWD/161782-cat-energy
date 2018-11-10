@@ -1,6 +1,9 @@
 .textarea {
   width: 100%;
+  padding: 12px 15px;
+  padding-right: 11px;
   border: 1px solid #cdcdcd;
+  min-height: 150px;
 
   &::placeholder {
     text-transform: uppercase;
@@ -13,5 +16,12 @@
   .textarea {
     width: 100%;
     border: 1px solid #cdcdcd;
+    padding: 9px 17px;
+    min-height: 174px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 }

@@ -5,30 +5,46 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<66d2e9f1-3a71-4847-8140-68563534bc8c>" type="text/javascript"></script>
+    <script src="js/mapmasics.js" type="text/javascript"></script>
   </head>
   <body>
-    <header class="header-site">
-      <div class="logo">
-        <img src="img/logo-mobile.svg" alt="cat-energy" width="191" height="39">
-      </div>
-      <button class="menu-button"></button>
-      <nav class="main-menu">
-        <ul class="main-menu__list">
-          <li class="main-menu__item"><a class="main-menu__link main-menu__link--index main-menu__link--active">Главная</a></li>
-          <li class="main-menu__item"><a class="main-menu__link main-menu__link--index" href="catalog.html">Каталог продукции</a></li>
-          <li class="main-menu__item"><a class="main-menu__link main-menu__link--index" href="form.html">Подбор программы</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div class="header-container">
+      <header class="header-site header-site--index">
+        <nav class="main-menu main-menu--close">
+          <div class="header-site__top">
+              <div class="header-site__wrap">
+                <div class="logo">
+                  <picture>
+                    <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+                    <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                    <img srcset="img/logo-mobile.svg" alt="cat-energy">
+                  </picture>
+                </div>
+                <button class="menu-button menu-button--close"></button>
+              </div>
+          </div>
+          <ul class="main-menu__list">
+            <li class="main-menu__item"><a class="main-menu__link main-menu__link--index main-menu__link--active">Главная</a></li>
+            <li class="main-menu__item"><a class="main-menu__link main-menu__link--index" href="catalog.html">Каталог продукции</a></li>
+            <li class="main-menu__item"><a class="main-menu__link main-menu__link--index" href="form.html">Подбор программы</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
     <main>
       <section class="promo">
         <div class="wrap promo__wrap">
           <h1 class="promo__title">Функциональное питание для котов</h1>
           <b class="promo__text">Занялся собой? Займись котом!</b>
           <div class="promo__image">
-            <img src="img/index-can-mobile@1x.png" alt="Cat-Energy Курица" width="280" height="270">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png">
+              <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
+              <img src="img/index-can-mobile@1x.png" alt="Cat-Energy Курица">
+            </picture>
           </div>
-          <a class="button button--tablet" href="form.html">Подобрать программу</a>
+          <a class="button button--promo button--tablet" href="form.html">Подобрать программу</a>
         </div>
       </section>
       <div class="wrap">
@@ -36,13 +52,13 @@
         <h2 class="visually-hidden">Наши программы</h2>
           <article class="category category--slim">
             <h2 class="category__title category__title--slim">Похудение</h2>
-            <p class="category__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <p class="category__text category__text--slim">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a class="category__link " href="slim.catalog.html">Каталог slim</a>
           </article>
           <article class="category category--pro">
               <h2 class="category__title category__title--pro">Набор массы</h2>
-              <p class="category__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-              <a class="category__link" href="pro.catalog.html">Каталог pro</a>
+              <p class="category__text category__text--pro">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+              <a class="category__link category__link--pro" href="pro.catalog.html">Каталог pro</a>
           </article>
         </section>
         <section class="advantages">
@@ -57,7 +73,7 @@
         </section>
       </div>
       <section class="example">
-        <div class="wrap">
+        <div class="wrap example__tablet-wrap">
           <div class="example__desktop-wrap-1">
             <div class="example__desktop-wrap-2">
               <h2 class="example__title">Живой пример</h2>
@@ -75,7 +91,7 @@
                     <p class="example__result">затрачено времени</p>
                   </div>
                 </div>
-                <p class="example__food-cost">Затраты на питание: 15 000 руб.</p>
+                <p class="example__food-cost">Затраты на питание: <span class="example__food-sum">15 000 руб.</span></p>
               </div>
             </div>
             <div class="example__before-after">
@@ -88,6 +104,7 @@
                 </div>
                 <div class="example__toggles-bar">
                   <button class="example__toggle example__toggle-after">Было</button>
+                  <div class="example__progress-bar"></div>
                   <button class="example__toggle example__toggle-before">Стало</button>
                 </div>
               </div>
@@ -97,31 +114,29 @@
       </section>
     </main>
     <footer class="footer">
-      <section class="location">
+      <section class="location location--index">
         <h2 class="visually-hidden">Как нас найти</h2>
-        <div class="contacts contacts--index">
-          <p class="contacts__offer">приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8<span class="contacts__town">Санкт-Петербург</span></p>
-        </div>
-        <div class="map">
+          <div class="contacts contacts--index wrap">
+            <p class="contacts__offer">приглашаем<br> к сотрудничеству дилеров!</p>
+            <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__town">Санкт-Петербург</span></p>
+          </div>
+        <div class="map" id="map">
         </div>
       </section>
-      <div class="wrap wrap--footer-bottom">
-        <div class="footer-bottom">
+      <div class="footer__wrap">
+        <div class="footer-bottom wrap wrap--footer-bottom">
           <a class="footer-logo" href="index.html">
-            <img src="../img/logo-footer.svg" alt="cat energy" width="128" height="24">
+            <img src="img/logo-footer.svg" alt="cat energy" width="128" height="24">
           </a>
           <section class="social">
             <h2 class="visually-hidden">Мы в социальных сетях</h2>
             <ul class="social__list">
-              <li>
+              <li class="social__item social__item--vk">
                 <a class="social__link social__link--vk" href="#">
                   <span class="visually-hidden">Мы Вконтатке</span>
                   <svg class="social__icon social__icon--vk"
                     x="0px"
                     y="0px"
-                    width="30.004px"
-                    height="15.761px"
                     viewBox="3.007 11.628 30.004 15.761"
                     enable-background="new 3.007 11.628 30.004 15.761"
                     xml:space="preserve">
@@ -157,7 +172,7 @@
                   </svg>
                 </a>
               </li>
-              <li>
+              <li class="social__item social__item--ig">
                 <a class="social__link social__link--ig" href="#">
                   <span class="visually-hidden">Наш Инстаграм</span>
                   <svg class="social__icon social__icon--ig"
@@ -167,8 +182,6 @@
                     xmlns:xlink="http://www.w3.org/1999/xlink"
                     x="0px"
                     y="0px"
-                    width="23px"
-                    height="23px"
                     viewBox="-3 -3 23 23"
                     enable-background="new -3 -3 23 23"
                     xml:space="preserve">
@@ -186,7 +199,7 @@
                   </svg>
                 </a>
               </li>
-              <li>
+              <li class="social__item social__item--fb">
                 <a class="social__link social__link--fb" href="#">
                   <span class="visually-hidden">Наш Фейсбук</span>
                   <svg
@@ -197,8 +210,6 @@
                     xmlns:xlink="http://www.w3.org/1999/xlink"
                     x="0px"
                     y="0px"
-                    width="13.518px"
-                    height="27.75px"
                     viewBox="34.789 -4.709 13.518 27.75"
                     enable-background="new 34.789 -4.709 13.518 27.75"
                     xml:space="preserve">
@@ -216,13 +227,13 @@
           </section>
           <section class="copyright">
             <h2 class="visually-hidden">Копирайт</h2>
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <a class="copyright__link copyright__link--name" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <svg class="copyright__htmlacademy-logo"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 60 60">
-                <path class="copyright__logo-style" fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
-              </svg>
+              <div class="copyright__htmlacademy-logo">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+                    <path class="copyright__logo-style" fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+                  </svg>
+              </div>
             </a>
           </section>
         </div>

@@ -4,17 +4,20 @@
   text-align: center;
   font-family: $main-font;
   color: #ffffff;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 20px;
   text-decoration: none;
   text-transform: uppercase;
   width: 100%;
   min-height: 40px;
-  padding-top: 14px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 11px;
+  padding: 10px 20px;
   background-color: $brand-color;
+  border: none;
+
+  &--promo {
+    font-size: 14px;
+    line-height: 18px;
+  }
 
   &--alt {
     background-color: $brand-color-alt;
@@ -29,7 +32,15 @@
 
 @media (min-width: $tablet-width) {
   .button {
-    order: 2;
+    &--promo {
+      font-size: 20px;
+      line-height: 20px;
+      width: 245px;
+      min-height: 52px;
+      padding-top: 15px;
+      padding-bottom: 16px;
+      margin-left: 88px;
+    }
 
     &--alt {
       margin-bottom: 20px;
@@ -38,17 +49,41 @@
     &--form {
       width: 283px;
       margin-right: 60px;
+      font-size: 20px;
+      padding-top: 16px;
+      padding-bottom: 17px;
+    }
+
+    &--catalog {
+      width: auto;
+      margin-left: 38px;
+      margin-right: 37px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .button--related-item {
-    width: 245px;
-  }
+  .button {
+    &--promo {
+      order: 2;
+      margin-left: 80px;
+    }
 
-  .button--form {
-    width: 570px;
-    margin-right: 80px;
+    &--catalog {
+      width: 169px;
+      margin-left: 41px;
+      margin-right: 43px;
+    }
+
+
+    &--related-item {
+      width: 245px;
+    }
+
+    &--form {
+      width: 570px;
+      margin-right: 81px;
+      border: none;
+    }
   }
 }
