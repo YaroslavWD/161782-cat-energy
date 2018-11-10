@@ -108,8 +108,6 @@
 
 @media (min-width: $tablet-width) {
   .category {
-    display: flex;
-    flex-direction: column;
     padding: 75px 28px 63px 52px;
     padding-right: 280px;
     margin-bottom: 30px;
@@ -211,7 +209,6 @@
 @media (min-width: $desktop-width) {
   .category {
     width: 570px;
-    align-items: flex-start;
     padding: 40px 52px;
     padding-bottom: 63px;
 

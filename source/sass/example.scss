@@ -78,6 +78,7 @@
   text-transform: lowercase;
   position: absolute;
   bottom: -17px;
+  left: 17px;
   z-index: 2;
   text-align: center;
   width: 85px;
@@ -228,6 +229,7 @@
     background-color: #ffffff;
     width: 138px;
     bottom: -6px;
+    left: 12px;
   }
 
   .example__food-cost {
@@ -421,6 +423,8 @@
 
   .example__result {
     background-color: $brand-color-alt;
+    bottom: -4px;
+    left: 12px;
   }
 
   .example__food-cost {
