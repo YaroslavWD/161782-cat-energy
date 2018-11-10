@@ -45,6 +45,12 @@
   padding-bottom: 35px;
 }
 
+
+.example__toggles-wrap {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .example__toggles {
   padding-left: 0;
   padding-right: 0;
@@ -248,6 +254,10 @@
     min-height: 670px;
   }
 
+  .example__toggles-wrap {
+    width: 768px;
+  }
+
   .example__before-after {
     box-shadow: inset 0 210px 0 #ffffff;
     padding-bottom: 0;
@@ -411,6 +421,10 @@
 
   .example__toggles {
     min-height: 672px;
+  }
+
+  .example__toggles-wrap {
+    width: auto;
   }
 
   .example__before {

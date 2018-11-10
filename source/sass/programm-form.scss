@@ -137,6 +137,11 @@
     }
   }
 
+  .programm-form__main-data {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+
   .programm-form__title {
     font-size: 36px;
     line-height: 36px;
@@ -241,6 +246,11 @@
     &--checkbox {
       padding-bottom: 23px;
     }
+  }
+
+  .programm-form__main-data {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .programm-form__title-wrap {

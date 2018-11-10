@@ -40,19 +40,21 @@
           <div class="programm-form__container">
             <div class="wrap wrap--nowrap">
               <fieldset class="programm-form__fieldset">
-                <legend class="visually-hidden">Основные данные</legend>
-                <p class="programm-form__item input">
-                  <label class="input__text" for="name-field">Имя:&#42;</label>
-                  <input class="input__control" id="nеame-field" name="name" type="text" placeholder="Барсик">
-                </p>
-                <p class="programm-form__item input">
-                  <label class="input__text" for="weight-field">Вес (кг):&#42;</label>
-                  <input class="input__control" id="weight-field" name="weight" type="text" placeholder="7" min="0">
-                </p>
-                <p class="programm-form__item input">
-                  <label class="input__text" for="age-field">Возраст (Лет):</label>
-                  <input class="input__control" id="age-field" name="age" type="text" placeholder="7" min="0">
-                </p>
+                <div class="programm-form__main-data">
+                  <legend class="visually-hidden">Основные данные</legend>
+                  <p class="programm-form__item input">
+                    <label class="input__text" for="name-field">Имя:&#42;</label>
+                    <input class="input__control" id="nеame-field" name="name" type="text" placeholder="Барсик">
+                  </p>
+                  <p class="programm-form__item input">
+                    <label class="input__text" for="weight-field">Вес (кг):&#42;</label>
+                    <input class="input__control" id="weight-field" name="weight" type="text" placeholder="7" min="0">
+                  </p>
+                  <p class="programm-form__item input">
+                    <label class="input__text" for="age-field">Возраст (Лет):</label>
+                    <input class="input__control" id="age-field" name="age" type="text" placeholder="7" min="0">
+                  </p>
+                </div>
               </fieldset>
             </div>
             <fieldset class="programm-form__fieldset programm-form__fieldset--radio">
@@ -136,10 +138,12 @@
     <footer class="footer">
       <section class="location">
         <h2 class="visually-hidden">Как нас найти</h2>
+        <div class="contacts-container">
           <div class="contacts wrap">
             <p class="contacts__offer">приглашаем<br> к сотрудничеству дилеров!</p>
             <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__town">Санкт-Петербург</span></p>
           </div>
+        </div>
         <div class="map" id="map">
         </div>
       </section>
