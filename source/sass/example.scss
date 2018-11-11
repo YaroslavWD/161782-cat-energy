@@ -45,6 +45,17 @@
   padding-bottom: 35px;
 }
 
+
+.example__toggles-wrap {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.example__toggles {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .example__result-value {
   font-family: $main-font;
   padding: 0;
@@ -67,6 +78,7 @@
   text-transform: lowercase;
   position: absolute;
   bottom: -17px;
+  left: 17px;
   z-index: 2;
   text-align: center;
   width: 85px;
@@ -105,7 +117,13 @@
   background-repeat: no-repeat;
   background-position: -20px 15px;
   min-height: 320px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/before-mobile@2x.png");
+    background-size: 320px auto;
+  }
 }
+
 
 .example__toggles-bar {
   position: absolute;
@@ -211,6 +229,7 @@
     background-color: #ffffff;
     width: 138px;
     bottom: -6px;
+    left: 12px;
   }
 
   .example__food-cost {
@@ -240,7 +259,11 @@
     display: flex;
     justify-content: stretch;
     align-content: stretch;
-    min-height: 670px;
+    min-height: 672px;
+  }
+
+  .example__toggles-wrap {
+    width: 768px;
   }
 
   .example__before-after {
@@ -260,6 +283,11 @@
     background-repeat: no-repeat;
     height: 560px;
     z-index: 2;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/before-tablet@2x.png");
+      background-size: 690px auto;
+    }
   }
 
   .example__toggle-before {
@@ -284,6 +312,11 @@
     width: 100%;
     height: 560px;
     z-index: 2;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/after-tablet@2x.png");
+      background-size: 690px auto;
+    }
   }
 
   .example__toggles-bar {
@@ -390,6 +423,8 @@
 
   .example__result {
     background-color: $brand-color-alt;
+    bottom: -4px;
+    left: 12px;
   }
 
   .example__food-cost {
@@ -406,6 +441,10 @@
 
   .example__toggles {
     min-height: 672px;
+  }
+
+  .example__toggles-wrap {
+    width: auto;
   }
 
   .example__before {
