@@ -76,20 +76,6 @@
     }
   }
 
-  .header-container {
-    &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 50%;
-      height: 696px;
-      z-index: -1;
-      background-color: #63a73a;
-      right: 1px;
-      top: 0;
-    }
-  }
-
   .header-site__wrap {
     width: auto;
     padding: 0;
