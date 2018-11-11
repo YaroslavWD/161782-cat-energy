@@ -1,4 +1,5 @@
- .header-container {
+@media (min-width: $desktop-width) {
+  .header-container {
     &::before {
       content: "";
       display: block;
@@ -11,3 +12,4 @@
       top: 0;
     }
   }
+}
