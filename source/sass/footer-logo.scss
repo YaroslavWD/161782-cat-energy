@@ -3,6 +3,14 @@
   padding-left: 76px;
   padding-right: 76px;
   padding-bottom: 27px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

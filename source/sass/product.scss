@@ -142,10 +142,20 @@
   .product {
     padding-top: 40px;
     padding-bottom: 40px;
+    width: 245px;
+    margin-bottom: 8px;
+  }
+
+  .product__image {
+    min-height: 242px;
+  }
+
+  .product__link {
+    padding-bottom: 18px;
   }
 
   .product__title {
-    padding: 0 49px 23px 47px;
+    padding: 0 49px 21px 47px;
   }
 
   .product__row {

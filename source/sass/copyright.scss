@@ -16,6 +16,10 @@
   &--name {
     padding-top: 12px;
     padding-right: 16px;
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   &--logo {
@@ -29,10 +33,16 @@
   width: 40px;
   margin-right: -6px;
   height: 40px;
+  color: #444444;
 }
 
-.copyright__logo-style {
-  fill: #444444;
+.copyright:hover .copyright__htmlacademy-logo {
+  color: $brand-color;
+}
+
+.copyright:active .copyright__htmlacademy-logo {
+  color: $brand-color;
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {

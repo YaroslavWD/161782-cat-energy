@@ -17,7 +17,7 @@
 }
 
 .input__control {
-  border: 1px solid #cdcdcd;
+  border: 1px solid #e6e6e6;
   flex-grow: 1;
   padding: 12px 15px;
 
@@ -26,21 +26,59 @@
     font-family: $main-font;
     color: $font-color;
   }
+
+  &:hover {
+    border: 1px solid  #cdcdcd;
+  }
+
+  &:active {
+    outline: 2px solid #444444;
+  }
+
+  &:invalid {
+    outline: 2px solid #ff8282;
+  }
 }
 
-.input--contacts {
-  &::after {
-    content: "";
-    position: absolute;
-    width: 17px;
-    height: 13px;
-    background-image: url("../img/icon-mail.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    right: 16px;
-    top: 16px;
-    z-index: 5;
-  }
+// .input--contacts {
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     width: 17px;
+//     height: 13px;
+//     background-image: url("../img/icon-mail.svg");
+//     background-repeat: no-repeat;
+//     background-position: 0 0;
+//     right: 16px;
+//     top: 16px;
+//     z-index: 5;
+//   }
+// }
+
+.input__icon--email {
+  position: absolute;
+  width: 17px;
+  height: 13px;
+  right: 20px;
+  top: 18px;
+  z-index: 5;
+}
+
+.input__icon--phone {
+  position: absolute;
+  width: 19px;
+  height: 13px;
+  right: 20px;
+  top: 19px;
+  z-index: 5;
+}
+
+.input__control:active + .input__icon {
+  color: $brand-color;
+}
+
+.input__control:invalid + .input__icon {
+  color: #ff8282;
 }
 
 .input--phone {
