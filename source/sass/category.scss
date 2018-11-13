@@ -93,10 +93,26 @@
     content: "";
     position: absolute;
     background-image: url("../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
     width: 24px;
     height: 11px;
     top: 22px;
     left: 97px;
+  }
+
+  &:hover {
+    &::before {
+      width: 33px;
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+    &::before {
+      width: 33px;
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+    }
   }
 }
 

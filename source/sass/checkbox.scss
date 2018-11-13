@@ -21,6 +21,18 @@
     top: 8px;
     left: 1px;
   }
+
+  &:hover {
+    cursor: pointer;
+
+    &::before {
+      border: 1x solid #bebebe;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .checkbox__control {

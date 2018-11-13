@@ -11,6 +11,16 @@
 
 .social__link {
   display: block;
+  color: #231F20;
+}
+
+.social__link:hover {
+  color: $brand-color;
+}
+
+.social__link:active {
+  color: $brand-color;
+  opacity: 0.3;
 }
 
 .social__link--vk {
@@ -28,6 +38,10 @@
 .social__link--fb {
   width: 10px;
   height: 19px;
+}
+
+.social__icon--ig:hover {
+  fill: $brand-color;
 }
 
 @media (min-width: $tablet-width) {

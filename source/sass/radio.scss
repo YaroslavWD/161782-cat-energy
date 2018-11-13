@@ -25,6 +25,18 @@
     left: 0;
     top: -1px;
   }
+
+  &:hover {
+    cursor: pointer;
+
+    &::before {
+      border: 1x solid #bebebe;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .radio__control {
@@ -41,6 +53,7 @@
   left: 9px;
   top: 7px;
 }
+
 
 @media (min-width: $tablet-width) {
   .radio {
